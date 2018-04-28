@@ -1,0 +1,8 @@
+<div class="suite-nav">
+  <ul>
+    <li><h5>Choose a Suite:</h5></li>
+    {{ range sort $.Site.Data.suites "order"}}
+      <li class="{{ if eq $.Params.suite .slug }}active{{ end }}"><a href="{{ .url }}" title="View Dances from {{ .title }}"><span>{{if isset . "short_title"}}{{ .short_title }}{{ else }}{{ .title }}{{end}}</span></a></li>
+    {{ end }}
+  </ul>
+</div>

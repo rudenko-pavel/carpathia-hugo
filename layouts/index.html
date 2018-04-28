@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+  <div id="fullpage">
+
+    {{ block "mainBanner" . }}{{ partial "mainBanner" . }}{{end}}
+
+    {{ block "about" . }}{{ partial "about" . }}{{end}}
+
+    {{ block "suites" . }}{{ partial "suites" . }}{{end}}
+
+    {{ block "hireus" . }}{{ partial "hireus" . }}{{end}}
+
+    {{ block "joinus" . }}{{ partial "joinus" . }}{{end}}
+
+  </div>
+
+{{end}}

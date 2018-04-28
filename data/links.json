@@ -1,0 +1,50 @@
+{
+  "Partner Dance Ensembles" : [
+    {
+      "name" : "Kalinka",
+      "url" : "http://kalinkabaltimore.org/",
+      "description" : "Kalinka Dance Ensemble of Baltimore is a performer of Traditional Russian Dance in Baltimore/Washington DC area. They offer Russian Dance Lessons for children and adults; participate in Russian and other Ethnic Festivals, and provide Russian Entertainment at weddings, corporate parties, and community celebrations."
+    },
+    {
+      "name" : "Tisza Ensemble",
+      "url" : "http://www.tiszaensemble.org/",
+      "description" : "Tisza Ensemble presents traditional Hungarian folk dances via classes and performances, and participates in táncházak (dance houses), workshops, and camps across North America (and sometimes as far away as Hungary and Transylvania)."
+    },
+    {
+      "name" : "Zorya Ukrainian Dancers of Dallas",
+      "url" : "https://zoryatexas.jimdo.com/",
+      "description" : "Zorya Ukrainian Dance Ensemble of Dallas is a unique folk dance group that has been entertaining audiences throughout Texas for over 41 years. The name Zorya, meaning Rising Star, was chosen not only to reflect the group’s Ukrainian roots but also its ties to the Lone Star State. From its home grown “Texan” dance to its traditional performance of the quintessential Ukrainian dance “Hopak,” Zorya offers a spirited and exciting combination of Ukrainian folk dance for your enjoyment."
+    }
+  ],
+  "Washington DC Cultural Resources" : [
+    {
+      "name" : "The Folklore Society of Greater Washington",
+      "url" : "http://fsgw.org/",
+      "description" : "The Folklore Society of Greater Washington sponsors more than 200 events a year. The main purpose of the Society is to further the understanding, investigation, appreciation, and performance of the traditional folk music and folklore of the American people."
+    },
+    {
+      "name" : "Mid-Atlantic Dance Net",
+      "url" : "http://dcdancenet.com/",
+      "description" : "Links to all things dance int he DC and mid-atlantic area."
+    }
+  ],
+  "Media" : [
+    {
+      "name" : "Ben Frey Photography",
+      "url" : "http://www.benfreyphotography.com/",
+      "description" : "Ben Frey is the brilliant eye behind most of the ensemble photographs.  Check out his website for more work and hire him!"
+    },
+    {
+      "name" : "Konstantin Solutions",
+      "url" : "http://konstantin.bio",
+      "description" : "Konstantin offers comprehensive branding and web development consulting services for small and mid-size businesses.  He is also a member of the group and loves spreading his passion for his own culture through dances and multimedia."
+    }
+  ],
+  "Other Dance Resources" : [
+    {
+      "name" : "Ukrainian Dance World",
+      "url" : "http://www.ukrainiandanceworld.com/",
+      "description" : "Everything Ukrainian Dance related can be found here."
+    }
+  ]
+}

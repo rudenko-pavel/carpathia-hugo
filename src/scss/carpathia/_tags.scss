@@ -1,0 +1,417 @@
+$ukrainian: url("https://ucarecdn.com/766d0235-a6a8-4ecd-aec2-5cf0a4bf9c7c/-/quality/best/-/progressive/yes/ukrainian.jpg");
+$macedonian: url("https://ucarecdn.com/f1a0a72e-ddb8-4e50-a953-a9b8e84bb02b/-/quality/best/-/progressive/yes/macedonian.jpg");
+$romanian: url("https://ucarecdn.com/4216d858-aba1-4a85-85e6-1b8994fbbd7a/-/quality/best/-/progressive/yes/romanian.jpg");
+$german: url("https://ucarecdn.com/2662672f-a875-4b33-851d-6f59a2693e6e/-/quality/best/-/progressive/yes/german.jpg");
+$polish: url("https://ucarecdn.com/f2cfd8b2-399b-4d65-ab16-bc4207fa5fca/-/quality/best/-/progressive/yes/polish.jpg");
+$gypsy: url("https://ucarecdn.com/4bbe7698-d5dd-415a-9db0-9fccd8cc95d4/-/quality/best/-/progressive/yes/gypsy.jpg");
+$hungarian: url("https://ucarecdn.com/8793f212-722f-410b-9803-bd35c77fff42/-/quality/best/-/progressive/yes/hungarian.jpg");
+
+[class^="tag-"] {
+  height: auto;
+  background: $lighter-gray;
+
+  .container {
+    max-width: $global-width * .666667;
+    margin: 0 auto;
+  }
+
+  &>header,
+  &>.header {
+    $header-font-size: 4rem;
+
+    margin-bottom: $global-margin;
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      padding: $global-padding 0;
+      font-size: 5vw;
+
+      @include breakpoint(large up) {
+        font-size: $header-font-size;
+      }
+
+      span {
+        vertical-align: sub;
+      }
+
+      .flag {
+        display: none;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-right: $global-margin;
+        vertical-align: middle;
+
+        width: $header-font-size * 1.5;
+        height: ($header-font-size * 1.5) * .666667;
+      }
+    }
+  }
+
+  article {
+    padding-top: 0;
+    max-width: $global-width * .666667;
+    margin: 0 auto ($global-margin * 2);
+
+    &.card.type-text {
+      background: transparent;
+
+      .card-section, footer {
+        background: $white;
+      }
+
+      .card-section {
+        @include breakpoint(large up) {
+          padding: 0 ($global-padding * 2) ($global-padding * 2);
+
+
+        }
+      }
+    }
+
+    &>header,
+    &.header {
+      padding: $global-padding;
+      text-align: center;
+
+      h1, h2 {
+        margin: 0;
+
+        a {
+          color: $black;
+          text-decoration: none;
+
+          &:hover {
+            color: $dark-gray;
+          }
+        }
+
+        &:before,
+        &:after {
+          width: calc(2em + 2rem);
+          height: calc(1em + 1rem);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 1rem;
+          background-image: url("/img/grey-curly-line-design.svg");
+        }
+
+        &:after {
+          margin-right: 0;
+          margin-left: 1rem;
+
+          transform: scaleX(-1);
+        }
+      }
+
+      &+.card-section {
+        padding-top: 0;
+      }
+    }
+
+    &>.iframe-container {
+
+      @include breakpoint(large up) {
+        width: calc(100% + 4rem);
+        margin-left: -2rem;
+
+        &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -2rem;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 2rem solid $medium-gray;
+            border-left: 2rem solid transparent;
+        }
+
+        &:after {
+            left: auto;
+            right: 0;
+            border-right: 2rem solid transparent;
+            border-left: none;
+        }
+      }
+
+
+    }
+
+    &>.card-section {
+      figure.tmblr-embed:first-of-type {
+        margin: 0;
+
+        @include breakpoint(large up) {
+          width: calc(100% + 8rem);
+          margin-left: -4rem;
+
+          &:before, &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              bottom: -2rem;
+              left: 0;
+              width: 0;
+              height: 0;
+              border-top: 2rem solid $medium-gray;
+              border-left: 2rem solid transparent;
+          }
+
+          &:after {
+              left: auto;
+              right: 0;
+              border-right: 2rem solid transparent;
+              border-left: none;
+          }
+        }
+
+
+      }
+
+
+        p {
+          @include breakpoint(large up) {
+            font-size: 1.25rem;
+          }
+        }
+
+    }
+  }
+
+  &.tag-ukraine, &.tag-ukrainian, &.tag-Ukraine, &.tag-Ukrainian,
+  &.tag-macedonia, &.tag-macedonian, &.tag-Macedonia, &.tag-Macedonian,
+  &.tag-bulgaria, &.tag-bulgarian, &.tag-Bulgaria, &.tag-Bulgarian,
+  &.tag-hungary, &.tag-hungarian, &.tag-Hungary, &.tag-Hungarian,
+  &.tag-romania, &.tag-romanian, &.tag-Romania, &.tag-Romanian,
+  &.tag-gypsy, &.tag-Gypsy,
+  &.tag-germany, &.tag-german, &.tag-Germany, &.tag-German,
+  &.tag-poland, &.tag-polish, &.tag-Poland, &.tag-Polish {
+    &>header,
+    &>.header {
+      height: 65vh;
+      position: relative;
+      background-size: cover;
+      background-repeat: none;
+      background-position: center;
+
+      h1 {
+        color: $white;
+        position: absolute;
+        bottom: $global-padding;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+
+        .flag {
+          display: inline-block;
+        }
+      }
+
+    }
+  }
+
+  &.tag-ukrainian, &.tag-ukraine, &.tag-Ukraine, &.tag-Ukrainian {
+    &>header,
+    &>.header{
+      background-image: $ukrainian;
+
+      h1 {
+        .flag {
+          background-image: $ukrainian-flag;
+        }
+      }
+    }
+  }
+
+  &.tag-macedonia, &.tag-macedonian, &.tag-Macedonia, &.tag-Macedonian {
+    &>header,
+    &>.header{
+      background-image: $macedonian;
+
+      h1 {
+        .flag {
+          background-image: $macedonian-flag;
+        }
+      }
+    }
+  }
+
+  &.tag-hungary, &.tag-hungarian, &.tag-Hungary, &.tag-Hungarian {
+    &>header,
+    &>.header{
+      background-image: $hungarian;
+
+      h1 {
+        .flag {
+          background-image: $hungarian-flag;
+        }
+      }
+    }
+  }
+
+  &.tag-romania, &.tag-romanian, &.tag-Romania, &.tag-Romanian {
+    &>header,
+    &>.header{
+      background-image: $romanian;
+
+      h1 {
+        .flag {
+          background-image: $romanian-flag;
+        }
+      }
+    }
+  }
+
+  &.tag-gypsy, &.tag-Gypsy {
+    &>header,
+    &>.header{
+      background-image: $gypsy;
+
+      h1 {
+        .flag {
+          background-image: $gypsy-flag;
+        }
+      }
+    }
+  }
+
+  &.tag-germany, &.tag-german, &.tag-Germany, &.tag-German {
+    &>header,
+    &>.header{
+      background-image: $german;
+
+      h1 {
+        .flag {
+          background-image: $german-flag;
+        }
+      }
+    }
+  }
+
+  &.tag-poland, &.tag-polish, &.tag-Poland, &.tag-Polish {
+    &>header,
+    &>.header{
+      background-image: $polish;
+
+      h1 {
+        .flag {
+          background-image: $polish-flag;
+        }
+      }
+    }
+  }
+}
+
+.suite-nav {
+
+  display: none;
+  @include breakpoint(medium up) {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: $black;
+    color: $light-gray;
+    list-style: none;
+
+    &>li {
+      flex: 1;
+      align-items: center;
+      text-align: center;
+      height: 4rem;
+
+      &.active {
+        background: $dark-gray;
+      }
+
+      a {
+        color: $white;
+        display: block;
+        font-size: 1rem;
+        line-height: 2rem;
+        vertical-align: middle;
+        font-weight: bold;
+        text-decoration: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 ($global-padding / 2);
+
+        &:hover {
+          background-color: lighten($black, 5%);
+        }
+
+        span {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+
+
+
+          &:before {
+            content: '';
+            width: 3rem;
+            height: 2rem;
+            vertical-align: middle;
+            background-size: 100% 100%;
+
+            display: none;
+
+            @include breakpoint(large only) {
+              display: block;
+              margin: .5rem auto 0;
+            }
+
+            @include breakpoint(xlarge up) {
+              display: inline-block;
+              margin: 0;
+              margin-right: .5rem;
+            }
+
+
+          }
+
+
+        }
+
+        &[href*="ukraine"] span:before {
+            background-image: $ukrainian-flag;
+        }
+
+        &[href*="romania"] span:before {
+            background-image: $romanian-flag;
+        }
+
+        &[href*="poland"] span:before {
+            background-image: $polish-flag;
+        }
+
+        &[href*="gypsy"] span:before {
+            background-image: $gypsy-flag;
+        }
+
+        &[href*="germany"] span:before {
+            background-image: $german-flag;
+        }
+
+        &[href*="hungary"] span:before {
+            background-image: $hungarian-flag;
+        }
+
+        &[href*="macedonia"] span:before {
+            background-image: $macedonian-flag;
+        }
+
+
+      }
+    }
+  }
+
+}

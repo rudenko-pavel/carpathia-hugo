@@ -1,0 +1,62 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Carpathia Folk Dance Ensemble | Washington D.C."
+[params]
+  description = ""
+  tagline = "DC's Premier Central &amp; Eastern European Folk Dance Ensemble"
+  designer = "Konstantin Brazhnik"
+[menu]
+    [[menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/#about"
+    [[menu.main]]
+      identifier = "suites"
+      name = "Suites"
+      url = "/#suites"
+    [[menu.main]]
+      identifier = "hire"
+      name = "Hire"
+      url = "/#hire"
+    [[menu.main]]
+      identifier = "join"
+      name = "Join"
+      url = "/#join"
+    [[menu.main]]
+      identifier = "press"
+      name = "Press"
+      url = "/press/"
+    [[menu.suites]]
+      identifier = "ukraine"
+      name = "Ukraine"
+      url = "/ukraine/"
+    [[menu.suites]]
+      identifier = "romania"
+      name = "Romania"
+      url = "/romania/"
+    [[menu.suites]]
+      identifier = "poland"
+      name = "Poland"
+      url = "/poland/"
+    [[menu.suites]]
+      identifier = "gypsy"
+      name = "Gypsy"
+      url = "/gypsy/"
+    [[menu.suites]]
+      identifier = "germany"
+      name = "Germany"
+      url = "/germany/"
+    [[menu.suites]]
+      identifier = "hungary"
+      name = "Hungary"
+      url = "/hungary/"
+    [[menu.suites]]
+      identifier = "macedonia"
+      name = "Macedonia"
+      url = "/macedonia/"
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details:
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]

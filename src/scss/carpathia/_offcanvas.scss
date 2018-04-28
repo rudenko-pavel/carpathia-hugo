@@ -1,0 +1,15 @@
+#offCanvas {
+  background: transparent;
+  position: fixed;
+
+  .menu {
+    padding-top: 2rem;
+    a {
+      color: $white;
+    }
+  }
+}
+
+.off-canvas-wrapper {
+  background: lighten($black, 10%);
+}

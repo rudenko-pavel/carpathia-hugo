@@ -1,0 +1,24 @@
+
+{{ define "main" }}
+
+  {{ block "header" . }}{{ partial "header" . }}{{end}}
+
+  <article id="content" class="card type-text">
+    <div class="header">
+      <h1>{{ .Params.title }}</h1>
+    </div>
+    <div class="card-section">
+      {{ range $group, $links := .Site.Data.links }}
+        <h2>{{ $group }}</h2>
+
+        {{ range $links }}
+          <p><strong>{{ .name }}</strong> - <a href="{{ .url }}" target="_blank">{{ .url }}</a></p>
+          <p>{{ .description }}</p>
+        {{ end }}
+      {{ end }}
+    </div>
+  </article>
+
+  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
+{{ end }}

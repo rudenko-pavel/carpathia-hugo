@@ -1,0 +1,17 @@
+<div class="upcoming-events">
+
+  <h4><i class="fa fa-calendar"></i> Upcoming Events</h4>
+  <ul>
+  {{ range where .Data.Pages.ByDate "Section" "events" }}
+    {{ if ge .Date.Unix now.Unix }}
+      <li>
+        <a href="{{.Permalink}}"><strong>{{ .Title }}</strong></a>
+        <br />
+        <span>{{ dateFormat "2 January at 3:04pm" .Date }}</span>
+          at {{ .Params.place }}
+        </a>
+      </li>
+    {{ end }}
+  {{ end }}
+  </ul>
+</div>

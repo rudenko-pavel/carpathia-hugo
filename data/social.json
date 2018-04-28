@@ -1,0 +1,18 @@
+{
+  "facebook" : {
+    "icon" : "facebook",
+    "url" : "https://facebook.com/carpathiadc"
+  },
+  "twitter" : {
+    "icon" : "twitter",
+    "url" : "https://twitter.com/carpathiadc"
+  },
+  "instagram" : {
+    "icon" : "instagram",
+    "url" : "https://instagram.com/carpathiadc"
+  },
+  "youtube" : {
+    "icon" : "youtube",
+    "url" : "https://www.youtube.com/channel/UCXNTC1al5YPcFSkP-gK_FVw"
+  }
+}

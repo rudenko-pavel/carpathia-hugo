@@ -1,0 +1,22 @@
+{
+  "name": "carpathia-hugo",
+  "version": "1.0.0",
+  "authors": [
+    "Konstantin Solutions <konst@ntin.solutions>"
+  ],
+  "description": "Official site of the Carpathia Folk Dance Ensemble.",
+  "main": "gulpfile.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "~6.2.3",
+    "motion-ui": "~1.2.2",
+    "fullpage.js": "^2.9.2",
+    "font-awesome": "^4.7.0"
+  }
+}

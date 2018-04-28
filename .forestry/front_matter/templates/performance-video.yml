@@ -1,0 +1,37 @@
+---
+pages:
+- ukraine/arkan.md
+- ukraine/privit.md
+hide_body: false
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: suite
+  label: Suite
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: video
+  label: Video
+  type: text
+  hidden: false
+  default: ''

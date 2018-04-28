@@ -1,0 +1,28 @@
+{
+  "members" : [
+    {
+      "name" : "Dr. Wes Reisser",
+      "role" : "Artistic Director"
+    },
+    {
+      "name" : "Lena Galperina",
+      "role" : "Assistant Director"
+    },
+    {
+      "name" : "Diana Samata Phillips",
+      "role" : "Business Manager"
+    },
+    {
+      "name" : "Irina Douda",
+      "role" : "Secretary"
+    },
+    {
+      "name" : "Adam Schwartz",
+      "role" : "Outreach & Publicity"
+    },
+    {
+      "name" : "Steve Horoff",
+      "role" : "Membership"
+    }
+  ]
+}

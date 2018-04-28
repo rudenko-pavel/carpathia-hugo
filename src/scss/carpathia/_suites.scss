@@ -1,0 +1,208 @@
+$suites-nav-height: 3rem;
+
+.fp-controlArrow {
+  display: none;
+}
+
+[id^="suite-"] {
+  .content-container {
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+
+    @include breakpoint(small only) {
+      background-image: none !important;
+    }
+
+    .image {
+        background-size: cover;
+        flex: 1;
+        background-position: center;
+        order: 2;
+        margin-top: $header-height + $suites-nav-height;
+
+        @include breakpoint(small only) {
+          display: none;
+        }
+    }
+
+    .content {
+      background: rgba(255,255,255,.9);
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-width: 480px;
+      width: 33.33333%;
+      padding-top: $header-height + $suites-nav-height;
+
+      @include breakpoint(small only) {
+        width: 100%;
+        padding-top: 0;
+        min-width: 0;
+      }
+
+      iframe {
+        width: 120%;
+        max-height: 40%;
+        height: 400px;
+        border: 10px solid $white;
+        position: relative;
+        margin-left: 20px;
+        margin-top: 20px;
+
+        @include breakpoint(small only) {
+          width: 100%;
+          margin: 0 !important;
+          border-width: 0px;
+          height: 300px;
+        }
+
+      }
+
+      .text {
+        padding: 1rem 2rem;
+
+        h2 {
+          margin-bottom: 0;
+        }
+
+        p {
+          margin-top: .5rem;
+        }
+      }
+    }
+  }
+
+  &:nth-child(2n){
+    .content-container {
+      .image {
+        order: 1;
+      }
+      iframe {
+        margin-left: 0;
+        margin-right: 20px;
+        right: 20%;
+
+        @include breakpoint(small only) {
+          right: 0;
+        }
+      }
+      .content {
+        order: 2;
+
+        @include breakpoint(small only) {
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+}
+
+#suite-ukraine {
+  .content-container .image{
+    background-image: url("/img/ukrainian2.jpg");
+  }
+}
+
+#suite-gypsy {
+  .content-container .image{
+    background-image: url("/img/gypsy.jpg");
+  }
+}
+
+#suite-romania {
+  .content-container .image{
+    background-image: url("/img/romanian2.jpg");
+  }
+}
+
+#suite-poland {
+  .content-container .image{
+    background-image: url("/img/polish3.jpg");
+  }
+}
+
+#suite-germany {
+  .content-container .image{
+    background-image: url("/img/german2.jpg");
+  }
+}
+
+#suite-hungary {
+  .content-container .image{
+    background-image: url("/img/hungarianskirts.jpg");
+  }
+}
+
+#suite-macedonia {
+  .content-container .image{
+    background-image: url("/img/bulgarian.jpg");
+  }
+}
+
+#suites-container {
+  position: relative;
+
+  .fp-tableCell {
+    @include breakpoint(small only) {
+      vertical-align: top;
+    }
+  }
+
+  #suites-navigation {
+    position: absolute;
+    top: 0;
+    padding-top: $header-height;
+    width: 100%;
+    z-index: 2;
+    background-color: lighten($black, 10%);
+
+    @include breakpoint(small only) {
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+
+        &.active {
+          a {
+
+            img {
+              transform: scale(1.2);
+            }
+          }
+        }
+
+        span {
+          color: $white;
+          font-size: 1.5rem;
+          margin-right: 1rem;
+          line-height: 2rem;
+          vertical-align: middle;
+        }
+
+        a {
+          display: block;
+          padding-left: .125rem;
+          padding-right: .125rem;
+          padding-top: $suites-nav-height / 6;
+          padding-bottom: $suites-nav-height / 6;
+          img {
+            height: $suites-nav-height - 1rem;
+            margin: 0;
+            padding: 0;
+            transition: .5s all;
+          }
+        }
+      }
+
+    }
+  }
+}

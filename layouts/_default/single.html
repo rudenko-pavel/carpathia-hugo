@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8"><base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+    <title>{{ $.Site.Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    {{ block "favicon" . }}{{ partial "favicon" . }}{{end}}
+
+    {{ block "metatags" . }}{{ partial "metatags" . }}{{end}}
+
+    {{ block "ogtags" . }}{{ partial "ogtags" . }}{{end}}
+
+    <link rel="stylesheet" href="/css/app.css" />
+
+  </head>
+
+  <body>
+
+  <div class="off-canvas-wrapper" data-content-scroll="false">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      {{ block "offcanvasMenu" . }}{{ partial "offcanvasMenu" . }}{{end}}
+      <div class="off-canvas-content" data-off-canvas-content>
+        <!-- Your page content lives here -->
+        {{ block "main" . }}{{end}}
+      </div>
+    </div>
+  </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

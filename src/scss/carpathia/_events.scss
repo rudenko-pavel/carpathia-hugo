@@ -1,0 +1,21 @@
+.upcoming-events {
+  padding: 0 $global-padding;
+
+  &>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: $global-margin;
+
+      border-bottom: 1px dashed $medium-gray;
+      padding-bottom: $global-padding;
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+  }
+}

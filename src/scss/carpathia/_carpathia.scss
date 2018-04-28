@@ -1,0 +1,145 @@
+$romanian-flag: url("/img/flags/Flag_of_Romania.svg");
+$gypsy-flag: url("/img/flags/Flag_of_the_Romani_people.svg");
+$ukrainian-flag: url("/img/flags/Flag_of_Ukraine.svg");
+$polish-flag: url("/img/flags/Flag_of_Poland.svg");
+$german-flag: url("/img/flags/Flag_of_Germany.svg");
+$hungarian-flag: url("/img/flags/Flag_of_Hungary.svg");
+$macedonian-flag: url("/img/flags/Flag_of_Macedonia.svg");
+
+body {
+  &[class^="tag-archive-"] {
+    background: $lighter-gray;
+  }
+}
+
+#fullpage {
+  z-index: 1;
+}
+
+section {
+  height: 100vh;
+
+  &.background-pattern {
+    padding: 3rem;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+}
+
+
+
+
+
+.background-pattern {
+  background-image: url("/assets/img/background-pattern.jpg");
+  background-size: 300px 300px;
+}
+
+p {
+  @include breakpoint(small only) {
+    font-size: 5vw;
+  }
+}
+
+.section {
+}
+
+a.button {
+  text-decoration: none;
+}
+
+.card {
+  background: $white;
+  margin-bottom: $global-margin * 2;
+
+  &>iframe,
+  &>.iframe-container,
+  &>img {
+    width: 100%;
+  }
+
+  .card-section {
+    padding: $global-padding;
+
+    @include breakpoint(large up) {
+      padding: $global-padding * 2;
+    }
+
+    p {
+      @include breakpoint(large up) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  footer {
+    padding: $global-padding;
+    border-top: 1px dashed $light-gray;
+
+    ul.tags {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+
+        a {
+          color: darken($medium-gray, 10%);
+          text-decoration: none;
+          cursor: pointer;
+
+          &:hover {
+            color: $dark-gray;
+          }
+        }
+
+        &+li {
+          margin-left: $global-margin / 2;
+        }
+      }
+    }
+  }
+}
+
+.iframe-container,
+figure.tmblr-embed {
+  position: relative;
+  padding-top: 66.66667%;
+  width: 100%;
+
+  &>iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@import 'header';
+
+@import 'offcanvas';
+
+@import 'mainBanner';
+
+@import 'about';
+
+@import 'instagram';
+
+@import 'suites';
+
+@import 'joinushireus';
+
+@import 'tags';
+
+@import 'article';
+
+@import 'events';

@@ -1,0 +1,176 @@
+$article-max-width: $global-width * .666667;
+
+article {
+  max-width: $article-max-width;
+  margin: 0 auto;
+  position: relative;
+
+  &>h1 {
+      text-align: center;
+      font-size: 3rem;
+  }
+
+  &>img {
+    &:first-of-type {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    &+div {
+      margin-top: 60vh;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &.post- {
+    // This is a page
+
+
+  }
+
+  &.card {
+    &.type-text {
+        background: transparent;
+
+        .card-section, footer {
+          background: $white;
+        }
+
+        .card-section {
+          @include breakpoint(large up) {
+            padding: 0 ($global-padding * 2) ($global-padding * 2);
+
+
+          }
+        }
+    }
+
+    &>.card-section {
+      figure.tmblr-embed:first-of-type {
+        margin: 0;
+
+        @include breakpoint(large up) {
+          width: calc(100% + 8rem);
+          margin-left: -4rem;
+
+          &:before, &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              bottom: -2rem;
+              left: 0;
+              width: 0;
+              height: 0;
+              border-top: 2rem solid $medium-gray;
+              border-left: 2rem solid transparent;
+          }
+
+          &:after {
+              left: auto;
+              right: 0;
+              border-right: 2rem solid transparent;
+              border-left: none;
+          }
+        }
+
+
+      }
+
+
+        p {
+          @include breakpoint(large up) {
+            font-size: 1.25rem;
+          }
+        }
+
+    }
+
+    &>header,
+    &>.header {
+      padding: $global-padding;
+      text-align: center;
+      padding-top: $global-padding * 4;
+
+      h1, h2 {
+        margin: 0;
+
+        a {
+          color: $black;
+          text-decoration: none;
+
+          &:hover {
+            color: $dark-gray;
+          }
+        }
+
+        &:before,
+        &:after {
+          width: calc(2em + 2rem);
+          height: calc(1em + 1rem);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 1rem;
+          background-image: url("https://dp6sr46u9d2iq.cloudfront.net/assets/img/grey-curly-line-design.svg");
+        }
+
+        &:after {
+          margin-right: 0;
+          margin-left: 1rem;
+
+          transform: scaleX(-1);
+        }
+      }
+
+      &+.card-section {
+        padding-top: 0;
+      }
+    }
+
+    &>.iframe-container {
+
+      @include breakpoint(large up) {
+        width: calc(100% + 4rem);
+        margin-left: -2rem;
+
+        &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -2rem;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 2rem solid $medium-gray;
+            border-left: 2rem solid transparent;
+        }
+
+        &:after {
+            left: auto;
+            right: 0;
+            border-right: 2rem solid transparent;
+            border-left: none;
+        }
+      }
+
+
+    }
+  }
+}
+
+.suite-info {
+  max-width: $article-max-width;
+  margin: $global-margin auto;
+  font-size: $global-font-size * 1.5;
+
+  border-bottom: 1px dashed $medium-gray;
+  padding: ($global-padding * 1.5) 0 ($global-padding * 3);
+
+  &:empty {
+    display: none;
+  }
+}

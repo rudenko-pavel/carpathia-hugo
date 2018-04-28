@@ -1,0 +1,17 @@
+<section id="about-section" class="section">
+  <div class="content-container">
+    <div class="content">
+      <div class="about-photo"></div>
+      <div class="about-content">
+        <h2>About</h2>
+        <p>{{ .Params.about }}</p>
+        <h2>Board</h2>
+        <p>
+          {{ range .Site.Data.board.members }}
+            <b>{{ .name }}</b> <em>{{ .role }}</em><br />
+          {{ end }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

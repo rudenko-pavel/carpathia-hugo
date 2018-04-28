@@ -1,0 +1,74 @@
+#about-section {
+  .content-container {
+
+    .content {
+      flex: 1;
+      padding-top: $header-height;
+      background: $white;
+      display: flex;
+
+      @include breakpoint(small only) {
+          flex-direction: column;
+      }
+
+      .about-photo {
+        background-image: url("/img/cherryblossomgroup_o.jpg");
+        background-size: cover;
+        background-position: center top;
+        flex: 1;
+
+        @include breakpoint(small only) {
+          height: 33vh;
+          background-position: center center
+        }
+      }
+
+      .about-content {
+        width:50%;
+        max-width: 480px;
+        padding: 2rem;
+
+        @include breakpoint(small only) {
+          width: 100%;
+          max-width: none;
+        }
+      }
+
+      &>div {
+        // flex: 1;
+        // padding: 1rem;
+
+        .feed-image {
+          width: 20%;
+
+          img {
+            width: 100%;
+            border: .25rem solid $white;
+            box-shadow: 0 0 5px $medium-gray;
+          }
+        }
+
+        .feed-item {
+          display: flex;
+          margin-bottom: .5rem;
+          border-bottom: 1px dashed $medium-gray;
+          padding-bottom: .5rem;
+
+          &:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+          }
+
+          .feed-text {
+            flex: 1;
+            padding-left: 1rem;
+
+            h3 {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

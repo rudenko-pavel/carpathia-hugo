@@ -1,0 +1,54 @@
+{
+  "MainMenu" : [
+    {
+      "title" : "About",
+      "anchor" : "about"
+    },
+    {
+      "title" : "Suites",
+      "anchor" : "suites"
+    },
+    {
+      "title" : "Hire",
+      "anchor" : "hireus"
+    },
+    {
+      "title" : "Join",
+      "anchor" : "joinus"
+    },
+    {
+      "title" : "Press",
+      "href" : "/press"
+    }
+  ],
+  "suites" : [
+    {
+      "title" : "Ukraine",
+      "link" : "ukraine"
+    },
+    {
+      "title" : "Romania",
+      "link" : "romania"
+    },
+    {
+      "title" : "Poland",
+      "link" : "poland"
+    },
+    {
+      "title" : "Gypsy",
+      "link" : "gypsy"
+    },
+    {
+      "title" : "Germany",
+      "link" : "germany"
+    },
+    {
+      "title" : "Hungary",
+      "link" : "hungary"
+    },
+    {
+      "title" : "Macedonia",
+      "link" : "macedonia"
+    }
+  ]
+}

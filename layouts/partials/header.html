@@ -1,0 +1,26 @@
+<header id="main-header">
+  <div class="main-header-inner">
+    <div class="logo-container">
+      <a href="/#home">
+        <img class="logo-abridged" src="/img/CarpathiaLogo-abridged.png" alt="">
+      </a>
+    </div>
+    <ul id="navMenu" class="header-menu left hide-for-small-only">
+      {{ range .Site.Data.menus.MainMenu }}
+        <li data-menuanchor="{{ .anchor }}"><a href="{{ .href }}{{ if isset . "anchor" }}#{{ .anchor }}{{end}}">{{ .title }}</a></li>
+      {{ end }}
+      <li><a href="/links">Links</a></li>
+    </ul>
+    <ul class="header-menu right hide-for-small-only">
+      <li class="hide-for-medium-only hide-for-small-only"><span>Follow Us:</span></li>
+
+      {{ range .Site.Data.social }}
+        <li><a href="{{ .url }}" target="_blank" class="icon"><i class="fa fa-{{ .icon }}"></i></a></li>
+      {{ end }}
+
+    </ul>
+    <ul class="header-menu right show-for-small-only">
+      <li><a href="javascript:void(null)" class="icon" data-toggle="offCanvas" type="button"><i class="fa fa-bars"></i></a></li>
+    </ul>
+  </div>
+</header>

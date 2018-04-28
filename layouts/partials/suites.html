@@ -1,0 +1,26 @@
+<section id="suites-container" class="section">
+
+  {{ range sort $.Site.Data.suites "order" }}
+  <div id="suite-{{ .slug }}" class="slide">
+    <div class="content-container">
+      <div class="image"></div>
+      <div class="content">
+        <iframe src="{{ .youtube }}" width=100% frameborder="0" allowfullscreen></iframe>
+        <div class="text">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
+          <a href="{{ .url }}" class="button">More Dances from {{ .title }} &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  <div class="" id="suites-navigation">
+    <ul>
+      <li class="hide-for-small-only"><span>Pick a Country:</span></li>
+      {{ range sort $.Site.Data.suites "order" }}
+        <li class="{{if eq .order 0}}active{{end}}"><a href="#suites/{{ .order }}" title="{{ .title }}"><img src="{{ .flag}}" alt="" /></a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>

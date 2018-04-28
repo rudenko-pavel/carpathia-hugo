@@ -1,0 +1,112 @@
+#joinus-section,
+#hireus-section {
+  background-size: cover;
+  background-position: center center;
+  .content-container {
+
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    // padding-top: $header-height + 2rem;
+    align-items: flex-start;
+
+    @include breakpoint(small only) {
+      display: block;
+    }
+
+    .content {
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      background-color: rgba(255,255,255,0.9);
+      align-self: middle center;
+
+      @include breakpoint(small only) {
+        flex-direction: column;
+        display: block;
+      }
+
+      .form-description {
+        flex: 1;
+
+        @include breakpoint(small only) {
+          flex: none;
+        }
+      }
+
+      .cta {
+        align-items: center;
+        display: flex;
+
+        .button {
+          align-self: center;
+        }
+      }
+
+      &>div {
+        // flex: 1;
+        // max-width: 480px;
+        margin: 0 auto 0 0;
+        padding: 2rem;
+
+        &:first-child {
+          border-right: 1px dashed $light-gray;
+          margin: 0 0 0 auto;
+        }
+      }
+    }
+
+
+  }
+}
+
+
+
+#joinus-section {
+  background-image: url("/img/carpathia_washingtonmonument_o.jpg");
+
+  .fp-tableCell {
+    @include breakpoint(small only) {
+      vertical-align: top;
+    }
+  }
+  .content-container {
+    padding-top: $header-height;
+
+    @include breakpoint(small only) {
+      // padding-top: 0;
+      padding-bottom: 30rem;
+    }
+
+    .content {
+      @include breakpoint(small only) {
+        align-self: flex-start;
+      }
+    }
+  }
+
+  footer#main-footer {
+    position: absolute;
+  }
+}
+
+#hireus-section {
+  background-image: url("/img/hutsul.jpg");
+  .fp-tableCell {
+    @include breakpoint(small only) {
+      vertical-align: top;
+    }
+  }
+  .content-container {
+    padding-bottom: 2rem;
+
+    @include breakpoint(small only) {
+      padding-top: 20rem;
+    }
+
+    .content {
+      align-self: flex-end;
+    }
+  }
+}
