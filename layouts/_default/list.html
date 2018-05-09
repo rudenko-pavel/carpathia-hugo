@@ -25,14 +25,23 @@
       </article>
       <ul>
           
-      <!-- Ranges through content/post/*.md -->
+      <!-- Ranges through content/press/*.md -->
       <ul>
       {{ range (where .Data.Pages "Section" "press")  }}
       <li>
           {{.Date.Format "2006-01-02"}} | {{.Title}} | {{ substr .Content  0 100}}...
           <div><a href="{{.Permalink}}">{{ $.Params.press.more_text }}</a></div>
       </li>
-  {{ end }}
+        {{ end }}
+
+              <!-- Ranges through content/post/*.md -->
+      <ul>
+            {{ range (where .Data.Pages "Section" "posts")  }}
+            <li>
+                {{.Date.Format "2006-01-02"}} | {{.Title}} | {{ substr .Content  0 100}}...
+                <div><a href="{{.Permalink}}">{{ $.Params.press.more_text }}</a></div>
+            </li>
+              {{ end }}
 </ul>
   </main>
 
