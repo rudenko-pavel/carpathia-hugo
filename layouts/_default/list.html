@@ -11,7 +11,14 @@
               <h1>{{.Title}}</h1>
           </div>
           <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-          {{.Content}}
+          <!--{{.Content}}-->
+          <ul>
+          {{ $item := .Params.article_from_press }}
+          {{ range $item }}
+          
+          <li><a href="{{.link}}">{{  .date}} | {{ .title }}</a></li>
+          {{end}}
+        </ul>
       </article>
       <ul>
       <!-- Ranges through content/post/*.md -->
