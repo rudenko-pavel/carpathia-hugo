@@ -16,7 +16,7 @@
           {{ $item := .Params.article_from_press }}
           {{ range $item }}
           
-          <li><a href="{{.link}}">{{  .date}} | {{ .title }}</a></li>
+          <li><a href="{{.link}}">{{ dateFormat "2 Jan, 2006" .date}} | {{ .title }}</a></li>
           {{end}}
         </ul>
       </article>
