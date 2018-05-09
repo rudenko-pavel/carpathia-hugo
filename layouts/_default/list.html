@@ -33,8 +33,18 @@
           <div><a href="{{.Permalink}}">{{ $.Params.press.more_text }}</a></div>
       </li>
         {{ end }}
+      </ul>
 
               <!-- Ranges through content/post/*.md -->
+<hr/>
+              <ul>
+                    {{ range (where .Site.Pages "Section" "posts")  }}
+                    <li>
+                        {{.Date.Format "2006-01-02"}} | {{.Title}} | {{ .Content| safeHTML}}...
+                        <div><a href="{{.Permalink}}">{{ $.Params.press.more_text }}</a></div>
+                    </li>
+                      {{ end }}
+                    </ul>
   </main>
 
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
