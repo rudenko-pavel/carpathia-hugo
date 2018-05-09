@@ -8,19 +8,23 @@
   <main>
       <article class="card">
           <div class="header">
-              <h1>{{.Title}}</h1>
+              <h1>{{ .Params.press.title }}</h1>
           </div>
           <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
           <!--{{.Content}}-->
-          <ul>
+          <div>
           {{ $item := .Params.article_from_press }}
           {{ range $item }}
-          
-          <li><a href="{{.link}}">{{ dateFormat "2 Jan, 2006" .date}} | {{ .title }}</a></li>
+            <div>
+                <div>{{ dateFormat "2 Jan, 2006" .date}} -  {{ .title }}</div>
+                <div>{{ substr .description 0 100 }}...</div>
+                <div><a href="{{.link}}">{{ $.Params.press.more_text }}</a></div>
+            </div>
           {{end}}
-        </ul>
+          </div>
       </article>
       <ul>
+          
       <!-- Ranges through content/post/*.md -->
       {{ range .Data.Pages }}
           <li>
