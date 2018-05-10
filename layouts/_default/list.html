@@ -5,47 +5,62 @@
 
   {{ block "suite-navigation" . }}{{ partial "suite-navigation" . }}{{end}}
 
-  <main>
+    <main>
       <article class="card">
-          <div class="header">
-              <h1>{{ .Params.press.title }}</h1>
-          </div>
-          <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-          <!--{{.Content}}-->
-          <div>
-          {{ $item := .Params.article_from_press }}
-          {{ range $item }}
-            <div>
-                <div>{{ dateFormat "2 Jan, 2006" .date}} -  {{ .title }}</div>
-                <div>{{ substr .description 0 100 }}...</div>
-                <div><a href="{{.link}}">{{ $.Params.press.more_text }}</a></div>
-            </div>
-          {{end}}
-          </div>
-      </article>
-      <ul>
-          
-      <!-- Ranges through content/press/*.md -->
-      <ul>
-      {{ range (where .Data.Pages "Section" "press")  }}
-      <li>
-          {{.Date.Format "2006-01-02"}} | {{.Title}} | {{ .Content| safeHTML}}...
-          <div><a href="{{.Permalink}}">{{ $.Params.press.more_text }}</a></div>
-      </li>
-        {{ end }}
-      </ul>
+        <div class="header">
+            <h1>{{ .Params.press.title }}</h1>
+        </div>
+        <div class="header">
+            <h2>{{ .Params.press.first_block }}</h2>
+        </div>
+        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+        <!--{{.Content}}-->
+        <ul class="accordion" data-accordion>
+            {{ $item := .Params.article_from_press }}
+            {{ range $item }}
+                <li class="accordion-item " data-accordion-item>
+                    <a href="#" class="accordion-title">{{ dateFormat "2 Jan, 2006" .date}} -  {{ .title | safeHTML }}</a>
+                    <div class="accordion-content" data-tab-content >
+                        <div>{{ .description| safeHTML }}</div>
+                    </div>
+                </li>
+            {{end}}
+        </ul>
 
-              <!-- Ranges through content/post/*.md -->
-<hr/>
-              <ul>
-                    {{ range (where .Site.Pages "Section" "posts")  }}
-                    <li>
-                        {{.Date.Format "2006-01-02"}} | {{.Title}} | {{ .Content| safeHTML}}...
-                        <div><a href="{{.Permalink}}">{{ $.Params.press.more_text }}</a></div>
-                    </li>
-                      {{ end }}
-                    </ul>
-  </main>
+        <hr/>
+        <div class="header">
+            <h2>{{ .Params.press.second_block }}</h2>
+        </div>
+                  <!-- Ranges through content/press/*.md -->
+        <ul class="accordion" data-accordion>
+            {{ range (where .Data.Pages "Section" "press")  }}
+                <li class="accordion-item " data-accordion-item>
+                    <a href="#" class="accordion-title">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+                    <div class="accordion-content" data-tab-content >
+                        <div>{{ .Content| safeHTML}}</div>
+                    </div>
+                </li>
+            {{ end }}
+        </ul>
+
+        <hr/>
+        <div class="header">
+            <h2>{{ .Params.press.third_block }}</h2>
+        </div>
+                  <!-- Ranges through content/posts/*.md -->
+        <ul class="accordion" data-accordion>
+
+            {{ range (where .Site.Pages "Section" "posts")  }}
+                <li class="accordion-item " data-accordion-item>
+                    <a href="#" class="accordion-title">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+                    <div class="accordion-content" data-tab-content >
+                        <div>{{ .Content| safeHTML}}</div>
+                    </div>
+                </li>
+            {{ end }}
+        </ul>
+      </article>
+    </main>
 
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 
