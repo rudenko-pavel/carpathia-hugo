@@ -1,6 +1,9 @@
 +++
 title = ""
 [press]
+first_block = "_index.md"
+second_block = "content/press/*.md"
+third_block = "content/posts/*.md"
 more_text = "Read more >>"
 title = "Carpathia in the Press"
 [[article_from_press]]
