@@ -13,6 +13,6 @@ title_img = ""
 [[item_from_orbit]]
 img_src = "foundation.zurb.com/sites/docs/assets/img/orbit/03.jpg"
 is_active = false
-title_img = 1123
+title_img = "1123 img"
 
 +++
