@@ -1,5 +1,5 @@
 +++
-date = "2018-04-27T18:32:04-04:00"
+date_published = "2018-04-27T18:32:04-04:00"
 date_originally_published = ""
 original_source = "Scripps Howard Foundation Wire"
 title = "Scripps Howard Foundation Wire"
