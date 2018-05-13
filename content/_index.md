@@ -12,5 +12,16 @@ joinus: |-
   If you fit that bill, contact us and we would love to have you! No dance experience necessary! We'll teach you all of the steps.
 title: ''
 type: page
-
+orbit:
+  title: carousel slide
+item_from_orbit:
+  - img_src: https://ucarecdn.com/b1d136d6-144e-43de-b55b-c7722bab7f5a/hungarianskirts.jpg
+    is_active: true
+    title_img: Space1
+  - img_src: https://ucarecdn.com/28fefa5a-5bfc-4f06-aa07-24edaf0ed2cb/hutsul.jpg
+    is_active: false
+    title_img: Space2
+  - img_src: https://ucarecdn.com/83951691-1f17-407e-9b35-11dd0cdc7863/hungarian.jpg
+    is_active: false
+    title_img: Space3
 ---
