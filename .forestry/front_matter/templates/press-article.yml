@@ -29,3 +29,7 @@ fields:
   label: suite
   name: suite
   description: item from section 'press' (value='press')
+- type: text
+  label: layout
+  name: layout
+  description: default value = 'singlepress'
