@@ -2,6 +2,10 @@
 hide_body: false
 is_partial: false
 fields:
+- type: text
+  name: title
+  label: title
+  description: title
 - type: datetime
   name: date
   label: Date Published
@@ -18,7 +22,3 @@ fields:
   description: default value = 'singleperformance'
   default: singleperformance
   hidden: true
-- type: text
-  name: title
-  label: title
-  description: title
