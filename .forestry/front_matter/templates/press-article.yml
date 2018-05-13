@@ -30,6 +30,7 @@ fields:
   label: suite
   name: suite
   description: item from section 'press' (value='press')
+  hidden: true
 - type: text
   label: layout
   name: layout
