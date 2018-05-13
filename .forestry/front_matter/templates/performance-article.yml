@@ -1,0 +1,39 @@
+---
+pages:
+- press/dances-with-wolves.md
+- press/dance.md
+- press/melodic-metalcore.md
+- press/scripps-howard-foundation-wire.md
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Original Source
+  name: original_source
+  description: The source that wrote about our wonderful group.
+  config:
+    required: true
+- type: text
+  name: url
+  label: URL
+  description: The URL of the original article.
+- type: datetime
+  name: date_originally_published
+  label: Date Originally Publishd
+  description: The date of the original publication.
+- type: datetime
+  name: date
+  label: Date Published
+  description: The date of the publication in our site...
+- type: text
+  default: press
+  label: suite
+  name: suite
+  description: item from section 'press' (value='press')
+  hidden: true
+- type: text
+  label: layout
+  name: layout
+  description: default value = 'singlepress'
+  default: singlepress
+  hidden: true
