@@ -1,7 +1,7 @@
 ---
 title: Our Performances
 suite: performances
-performances:
+press:
   read_more: Read more
 ---
 list of performances:
