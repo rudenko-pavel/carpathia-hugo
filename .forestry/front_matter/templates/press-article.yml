@@ -36,3 +36,4 @@ fields:
   name: layout
   description: default value = 'singlepress'
   default: singlepress
+  hidden: true
