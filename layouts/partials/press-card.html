@@ -5,4 +5,7 @@
 	<div class="card-section">
 		{{ .Content }}
 	</div>
+	<hr/>
+	<h6>{{  dateFormat "Jan 2, 2006" .Date }}</h6>
+	<div>Original source: <a href="{{ .Params.Original_source }}" target=_blank>{{ .Params.Original_source }}</a></div>
 </article>
