@@ -1,0 +1,14 @@
+<article class="breadcrumbs type-text">
+{{ $.Scratch.Add "path" .Site.BaseURL }}
+
+	<div><a href="/">home</a></div>
+	{{ range $index, $element := split .Permalink "/" }}
+		{{ $.Scratch.Add "path" $element }}
+		{{ if ne $element "" }}
+			<div>&nbsp;/&nbsp;<a href='{{ $.Scratch.Get "path" }}'>{{$element}}</a></div>
+		{{ $.Scratch.Add "path" "/" }}
+		{{ end }}
+	{{ end }}
+<div class="clear"></div>
+
+</article>
