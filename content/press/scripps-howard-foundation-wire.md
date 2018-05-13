@@ -1,7 +1,6 @@
 +++
-date = "2018-04-27T18:32:04-04:00"
+date = "2018-05-09T21:00:00+00:00"
 date_originally_published = "2018-05-08T21:00:00+00:00"
-date_published = "2018-05-09T21:00:00+00:00"
 original_source = "Scripps Howard Foundation Wire"
 title = "Scripps Howard Foundation Wire"
 url = ""

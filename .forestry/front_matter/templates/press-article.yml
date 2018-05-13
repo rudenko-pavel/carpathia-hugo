@@ -20,6 +20,6 @@ fields:
   label: Date Originally Publishd
   description: The date of the original publication.
 - type: datetime
-  name: date_published
+  name: date
   label: Date Publishd
   description: The date of the publication in our site.

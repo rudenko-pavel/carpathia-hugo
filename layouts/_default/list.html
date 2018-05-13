@@ -17,10 +17,11 @@
 		<div class="columns small-12 medium-8 large-8 medium-offset-2 large-offset-2">
 			<ul>
 				<!-- Ranges through content/press/*.md -->
-				{{ range .Data.Pages }}
+				{{ $item := .Data.Pages }}
+				{{ range $item }}
 				<li>
 					<h4>{{.Title}} </h4>
-					<p>{{substr .Content 0 70 | safeHTML}}...</p>
+					<p> {{ .Date }} | {{substr .Content 0 70 | safeHTML}}...</p>
 					<a href="{{.Permalink}}">{{ $.Params.press.read_more }}</a>
 				</li>
 				{{ end }}
