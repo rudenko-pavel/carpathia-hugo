@@ -1,9 +1,4 @@
 ---
-pages:
-- press/dances-with-wolves.md
-- press/dance.md
-- press/melodic-metalcore.md
-- press/scripps-howard-foundation-wire.md
 hide_body: false
 is_partial: false
 fields:
@@ -26,14 +21,14 @@ fields:
   label: Date Published
   description: The date of the publication in our site...
 - type: text
-  default: press
+  default: performance
   label: suite
   name: suite
-  description: item from section 'press' (value='press')
+  description: item from section 'press' (value='performance')
   hidden: true
 - type: text
   label: layout
   name: layout
-  description: default value = 'singlepress'
-  default: singlepress
+  description: default value = 'singleperformance'
+  default: singleperformance
   hidden: true
