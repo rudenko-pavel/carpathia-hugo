@@ -33,3 +33,4 @@ fields:
   label: layout
   name: layout
   description: default value = 'singlepress'
+  default: singlepress
