@@ -24,3 +24,8 @@ fields:
   name: date
   label: Date Published
   description: The date of the publication in our site...
+- type: text
+  default: press
+  label: suite
+  name: suite
+  description: item from section 'press'
