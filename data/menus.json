@@ -9,6 +9,10 @@
       "anchor" : "suites"
     },
     {
+      "title" : "Performances",
+      "href" : "/performances"
+    },
+    {
       "title" : "Hire",
       "anchor" : "hireus"
     },

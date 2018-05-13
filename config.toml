@@ -16,6 +16,10 @@ title = "Carpathia Folk Dance Ensemble | Washington D.C."
       name = "Suites"
       url = "/#suites"
     [[menu.main]]
+      identifier = "performances"
+      name = "Performances"
+      url = "/performances"
+    [[menu.main]]
       identifier = "hire"
       name = "Hire"
       url = "/#hire"
