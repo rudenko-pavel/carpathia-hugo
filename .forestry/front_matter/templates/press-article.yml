@@ -28,4 +28,4 @@ fields:
   default: press
   label: suite
   name: suite
-  description: item from section 'press'
+  description: item from section 'press' (value='press')
