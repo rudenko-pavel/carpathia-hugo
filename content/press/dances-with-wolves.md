@@ -1,7 +1,6 @@
 +++
 date = "2018-05-11T11:57:55+00:00"
 date_originally_published = "2018-05-10T21:00:00+00:00"
-draft = true
 layout = "singlepress"
 original_source = "https://en.wikipedia.org/wiki/Dances_with_Wolves"
 suite = "press"
