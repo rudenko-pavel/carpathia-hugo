@@ -26,6 +26,12 @@ article_from_press:
     ctetur adipis icing elit,dolor sit amet sed do ut labore et dolore magna aliqua. '
   title: second article
 in_the_press:
+- date: 2018-05-03 21:00:00 +0000
+  date_originally_published: 2018-05-06 21:00:00 +0000
+  draft: ''
+  original_source: https://en.wikipedia.org
+  title: Melodic metalcore
+  url: ''
 - date: 2018-04-30 21:00:00 +0000
   date_originally_published: 2018-05-07 21:00:00 +0000
   draft: false
@@ -34,6 +40,4 @@ in_the_press:
   url: ''
 
 ---
-**Banksia aculeata**, the prickly banksia, is a plant of the family Proteaceae native to the Stirling Range in the southwest of Western Australia. A bushy shrub up to 2 m (7 ft) tall, it has fissured grey bark on its trunk and branches, and dense foliage and leaves with very prickly serrated margins.
-
-Its unusual pinkish, pendent (hanging) flower spikes, known as inflorescences, are generally hidden in the foliage and appear during the early summer. Unlike many other banksia species, it does not have a woody base, or lignotuber. Although it was collected in the 1840s by the naturalist James Drummond, it was not formally described until 1981, in Alex George's monograph of the genus.
+**Melodic metalcore** is a fusion genre, incorporating elements of [metalcore](https://en.wikipedia.org/wiki/Metalcore "Metalcore") and [melodic death metal](https://en.wikipedia.org/wiki/Melodic_death_metal "Melodic death metal"), with a heavy emphasis on melodic instrumentation, [blast beats](https://en.wikipedia.org/wiki/Blast_beat "Blast beat"), metalcore-stylized [breakdowns](https://en.wikipedia.org/wiki/Breakdown_(music) "Breakdown (music)") and clean [singing](https://en.wikipedia.org/wiki/Singing "Singing"). The genre has seen commercial success for employing a "more accessible and commercial style" than typical metalcore.[\[1\]](https://en.wikipedia.org/wiki/Melodic_metalcore#cite_note-AHM-1)Many notable melodic metalcore bands have been influenced by [At the Gates](https://en.wikipedia.org/wiki/At_the_Gates "At the Gates").[\[2\]](https://en.wikipedia.org/wiki/Melodic_metalcore#cite_note-:0-2)  
