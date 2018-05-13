@@ -21,7 +21,8 @@
 				{{ range $item }}
 				<li>
 					<h4>{{.Title}} </h4>
-					<p> {{ .Date }} | {{substr .Content 0 70 | safeHTML}}...</p>
+					<h6>{{  dateFormat "Jan 2, 2006" .Date }}</h6>
+					<p>{{substr .Content 0 70 | safeHTML}}...</p>
 					<a href="{{.Permalink}}">{{ $.Params.press.read_more }}</a>
 				</li>
 				{{ end }}
