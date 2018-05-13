@@ -1,8 +1,8 @@
 ---
 title: Melodic metalcore
 date: 2018-03-15 10:19:07 +0000
-original_source: https://wikipedia.org
-url: https://en.wikipedia.org/wiki/Melodic_metalcore
+original_source: https://en.wikipedia.org/wiki/Melodic_metalcore
+url: ''
 date_originally_published: 2018-03-14 22:00:00 +0000
 date_published: 2018-05-06 11:00:00 +0000
 suite: press
