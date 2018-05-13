@@ -21,5 +21,5 @@ fields:
   description: The date of the original publication.
 - type: datetime
   name: date
-  label: Date Publishd
-  description: The date of the publication in our site.
+  label: Date Published
+  description: The date of the publication in our site...
