@@ -1,6 +1,6 @@
-+++
-date = "2017-04-01T00:00:00Z"
-title = "My First Post"
+---
+title: "My First Post"
+date: 2017-04-01
+---
 
-+++
-##### I love Carpathia!
+# I love Carpathia!

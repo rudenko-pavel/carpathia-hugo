@@ -1,53 +1,29 @@
 <section id="orbit" class="section">
     <div class="row">
         <div class="columns small-12 medium-8 large-8">
+            <br/><br/><br/>
+            <h2>{{ .Params.orbit.title }}</h2>
             <div class="orbit" role="region" aria-label="" data-orbit>
                 <ul class="orbit-container">
                     <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
                     <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
-                    <li class="is-active orbit-slide">
-                        <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
-                    </li>
-                    <li class="orbit-slide">
-                        <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/02.jpg" alt="Space">
-                    </li>
-                    <li class="orbit-slide">
-                        <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/03.jpg" alt="Space">
-                    </li>
-                    <li class="orbit-slide">
-                        <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/04.jpg" alt="Space">
-                    </li>
-                </ul>
-                <nav class="orbit-bullets">
-                <button class="is-active" data-slide="0"></button>
-                <button data-slide="1"></button>
-                <button data-slide="2"></button>
-                <button data-slide="3"></button>
-                </nav>
-            </div>
-            <hr/>
-            <p>{{ .Params.orbit.title }}</p>
-                <div class="orbit" role="region" aria-label="" data-orbit>
-                    <ul class="orbit-container">
-                        <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
-                        <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
-                        
-                        {{ $item := .Params.item_from_orbit }}
-                        {{ range $item }}
+                    {{ $item := .Params.item_from_orbit }}
+                    {{ range $item }}
                         <li class=" {{ if eq .is_active "true" }}is-active{{ end }} orbit-slide">
-                                <img class="orbit-image" src="{{ .img_src }}" alt="{{ .title_img }}" title= "{{ .title_img }}">
-                            </li>
-                        {{end}}
-                    </ul>
-                    <nav class="orbit-bullets">
-                    <button class="is-active" data-slide="0"></button>
-                    <button data-slide="1"></button>
-                    <button data-slide="2"></button>
-                    <button data-slide="3"></button>
-                    </nav>
-                </div>
+                            <img class="orbit-image" src="{{ .img_src }}" alt="{{ .title_img }}" title= "{{ .title_img }}">
+                        </li>
+                    {{end}}
+                </ul>
 
-
+                <nav class="orbit-bullets">
+                    {{ $item := .Params.item_from_orbit }}
+                    {{ $len :=  len $item }}
+                    {{ range $index, $num := (seq $len) }}
+                        
+                        <button  data-slide="{{ $index }}"></button>
+                    {{ end }}
+                </nav>                  
+            </div>
         </div>
     </div>
 </section>

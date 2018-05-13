@@ -1,17 +1,20 @@
 <div class="upcoming-events">
 
-  <h4><i class="fa fa-calendar"></i> Upcoming Events</h4>
+  <h4><i class="fa fa-calendar"></i> Upcoming Shows</h4>
   <ul>
-  {{ range where .Data.Pages.ByDate "Section" "events" }}
-    {{ if ge .Date.Unix now.Unix }}
+  {{ range $.Site.Data.upcomingEvents }}
       <li>
-        <a href="{{.Permalink}}"><strong>{{ .Title }}</strong></a>
-        <br />
-        <span>{{ dateFormat "2 January at 3:04pm" .Date }}</span>
-          at {{ .Params.place }}
+        <strong>
+        {{ if isset . "description" }}
+          <a href="{{.description}}" target="_blank">{{ .summary }}</a>
+        {{ else }}
+          {{ .summary }}
+        {{ end }}
+      </strong><br />
+        <em>{{if isset .start "date"}}{{ dateFormat "January 2nd at 3:04pm" .start.date }}{{end}}{{if isset .start "dateTime"}}{{ dateFormat "January 2 at 3:04pm" .start.dateTime }}{{end}}</em><br />
+          {{ .location }}
         </a>
       </li>
-    {{ end }}
   {{ end }}
   </ul>
 </div>

@@ -21,6 +21,7 @@ import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 
 const browserSync = BrowserSync.create();
+const googleCal = require('./googleCal');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -45,8 +46,8 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Build/production tasks
-gulp.task("build", ["sass", "javascript", "images", "fonts", "webfonts"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["sass", "javascript", "images", "fonts", "webfonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("build", ["gCal", "sass", "javascript", "images", "fonts", "webfonts"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build-preview", ["gCal", "sass", "javascript", "images", "fonts", "webfonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
@@ -148,6 +149,10 @@ gulp.task("server", ["hugo", "sass", "images", "javascript", "fonts", "webfonts"
   gulp.watch("./layouts/**/*", ["hugo"]);
   gulp.watch("./data/**/*", ["hugo"]);
 });
+
+gulp.task("gCal", () => (
+  googleCal.fetchEvents()
+));
 
 /**
  * Run hugo and build the site
