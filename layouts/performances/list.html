@@ -1,0 +1,36 @@
+
+{{ define "main" }}
+
+  {{ block "header" . }}{{ partial "header" . }}{{end}}
+
+  {{ block "suite-navigation" . }}{{ partial "suite-navigation" . }}{{end}}
+
+  <main>
+	<article class="card">
+		<div class="header">
+			<h1>{{.Title}} | Performances</h1>
+		</div>
+		<!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+		<div>{{.Content}}</div>
+	</article>
+	   <div class="row">
+		<div class="columns small-12 medium-8 large-8 medium-offset-2 large-offset-2">
+			<ul>
+				<!-- Ranges through content/press/*.md -->
+				{{ $item := .Data.Pages }}
+				{{ range $item }}
+				<li>
+					<h4>{{.Title}} </h4>
+					<h6>{{  dateFormat "Jan 2, 2006" .Date }}</h6>
+					<p>{{substr .Content 0 70 | safeHTML}}...</p>
+					<a href="{{.Permalink}}">{{ $.Params.press.read_more }}</a>
+				</li>
+				{{ end }}
+			</ul>
+		</div>
+	</div>
+  </main>
+
+  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
+{{ end }}

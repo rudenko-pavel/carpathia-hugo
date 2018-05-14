@@ -1,0 +1,14 @@
+
+{{ define "main" }}
+
+	{{ block "header" . }}{{ partial "header" . }}{{end}}
+
+	{{ block "suite-navigation" . }}{{ partial "suite-navigation" . }}{{end}}
+
+	{{ block "press-breadcrumbs" . }}{{ partial "press-breadcrumbs" . }}{{end}}
+
+    {{ block "performance-card" . }}{{ partial "performance-card" . }}{{end}}
+
+	{{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
+{{ end }}
