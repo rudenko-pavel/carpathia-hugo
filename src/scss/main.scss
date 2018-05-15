@@ -23,6 +23,28 @@
 
 .orbit-slide{
 	max-height: 100% !important;
+	text-align: center;
+}
+
+.wrapper-orbit{
+	width:100%;
+}
+
+.orbit-image{
+	max-width: 960px;
+}
+
+.orbit-previous, .orbit-next{
+	background-color: lighten($primary-color,30%);
+}
+
+.orbit-previous:hover,
+.orbit-next:hover,
+.orbit-previous:active,
+.orbit-next:active,
+.orbit-previous:focus,
+.orbit-next:focus {
+	background-color: lighten($primary-color,20%);
 }
 
 /* ----------- orbit - end   -------------*/
