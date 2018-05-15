@@ -17,6 +17,7 @@ fields:
   name: images
   description: list of Images
   config:
-    use_select: false
+    use_select: true
     source:
-      type: datafiles
+      type: pages
+      section: performances
