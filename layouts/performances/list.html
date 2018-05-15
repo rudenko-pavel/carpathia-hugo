@@ -16,7 +16,7 @@
 				<div class="card-section">
 					<!-- Ranges through content/performances/*.md -->
 					{{ $item := .Data.Pages }}
-					{{ range $item }}
+					{{ range $item }} 
 						{{$img := index (.Params.images) 0 }}
 						<a href="{{.Permalink}}">
 							<img class="orbit-image" src="https://ucarecdn.com/{{ $img }}/-/preview/">
