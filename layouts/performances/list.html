@@ -14,16 +14,15 @@
 		<div class="row">
 			<div class="columns small-12 medium-8 large-8 medium-offset-2 large-offset-2">
 				<div class="card-section">
-					<!-- Ranges through content/performances/_index.md -->
-					{{ $item := .Params.Performances }}
+					<!-- Ranges through content/performances/*.md -->
+					{{ $item := .Data.Pages }}
 					{{ range $item }}
-						{{ $img := .images }}
-						{{ range first 1 $img }}
-							<a href="{{.Permalink}}">
-								<img class="grid-image" src="https://ucarecdn.com/{{ .img_src }}/-/preview/" alt="{{ .alt_image }}" title= "{{ .alt_image }}">
-							</a>
-						{{ end }}
-						<hr/>
+						{{$img := index (.Params.images) 0 }}
+						<a href="{{.Permalink}}">
+							<img class="orbit-image" src="https://ucarecdn.com/{{ $img }}/-/preview/">
+						</a>
+
+
 					{{ end }}
 				</div>
 			</div>
