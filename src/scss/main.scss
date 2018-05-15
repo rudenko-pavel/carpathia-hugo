@@ -10,6 +10,23 @@
 	float: none !important;
 }
 
+/* ----------- orbit - start   -------------*/
+.orbit-container{
+	padding: 0px;
+	max-height:  100%;
+}
+
+.orbit {
+	height:  100%;
+	max-height:  100%;
+}
+
+.orbit-slide{
+	max-height: 100% !important;
+}
+
+/* ----------- orbit - end   -------------*/
+
 /* ----------- list - start   -------------*/
 .short-description, .card-section{
 	border-bottom: 1px dashed $light-gray;

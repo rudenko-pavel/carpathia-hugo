@@ -8,22 +8,31 @@ If you fit that bill, contact us and we would love to have you! No dance experie
 orbit:
   title: carousel slide
 item_from_orbit:
-  - img_src: https://ucarecdn.com/b1d136d6-144e-43de-b55b-c7722bab7f5a/hungarianskirts.jpg
+  - img_src: https://ucarecdn.com/16f48a28-b6e1-4f5c-a652-6b669b8702ec/-/preview/
     is_active: true
-    title_img: hungarian
-  - img_src: https://ucarecdn.com/28fefa5a-5bfc-4f06-aa07-24edaf0ed2cb/hutsul.jpg
+    title_img: 
+  - img_src: https://ucarecdn.com/cf4d5cd6-7e8d-47ef-be7a-cb997f36a0c0/-/preview/
     is_active: false
-    title_img: hutsul
-  - img_src: https://ucarecdn.com/83951691-1f17-407e-9b35-11dd0cdc7863/hungarian.jpg
+    title_img: 
+  - img_src: https://ucarecdn.com/f0d6eaa4-debb-4c5e-9e38-5bf2c14cca3d/-/preview/
     is_active: false
-    title_img: hungarian
-  - img_src: https://ucarecdn.com/cc2cb215-f054-48cc-8fbf-603d33e1d1df/gypsy2.jpg
+    title_img: 
+  - img_src: https://ucarecdn.com/89023569-0629-4cc4-9747-437933f4adf6/-/preview/
     is_active: false
-    title_img: gypsy
-  - img_src: https://ucarecdn.com/c26c747b-df4e-4c83-ad70-4b8207d14a63/german2.jpg
+    title_img: 
+  - img_src: https://ucarecdn.com/90c7776e-d7a0-43c1-adcd-a4a62994170f/-/preview/
     is_active: german
     title_img: 
-  - img_src: https://ucarecdn.com/6ea4b858-5adf-4d7d-9122-a6567961d554/cherryblossomgroup_o.jpg
+  - img_src: https://ucarecdn.com/94f8c5a2-a5db-466f-a2f8-d38451f41045/-/preview/
     is_active: false
-    title_img: cherry blossom group
+    title_img: 
+  - img_src: https://ucarecdn.com/2988346c-6724-4597-ad17-952f5a32e75e/-/preview/
+    is_active: false
+    title_img: 
+  - img_src: https://ucarecdn.com/2e36cd1b-7edf-4feb-ae94-9d984ed0e54a/-/preview/
+    is_active: false
+    title_img: 
+  - img_src: https://ucarecdn.com/2adc9117-98db-4a6b-adbf-938860d77bf7/-/preview/
+    is_active: false
+    title_img: 
 ---
