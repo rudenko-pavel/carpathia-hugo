@@ -5,8 +5,6 @@ joinus: "We are always recruiting new and enthusiastic dancers. Carpathia is com
 
 If you fit that bill, contact us and we would love to have you! No dance experience necessary! We'll teach you all of the steps."
 
-orbit:
-  title: carousel slide
 item_from_orbit:
   - img_src: https://ucarecdn.com/16f48a28-b6e1-4f5c-a652-6b669b8702ec/-/preview/
     is_active: true
