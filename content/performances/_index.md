@@ -14,5 +14,14 @@ Performances:
     img_src: 604917d0-6681-41cc-8d1c-8d539800201c
   - alt_image: image 555
     img_src: 3b48b946-5f08-44f5-94f5-bc7feb94b565
+- performance: Carpathia Performs at the Cherry Blossom Festival
+  date: 2018-04-06 21:00:00 +0000
+  images:
+  - alt_image: img 1A
+    img_src: e5552f46-de78-4053-ac52-7e3adb4a81c1
+  - alt_image: img 2A
+    img_src: 99b23b5d-d7e3-4c90-8b7c-96eacb9266a4
+  - alt_image: img 3A
+    img_src: 2494ef75-0118-4054-add4-377cdab1181f
 
 ---
