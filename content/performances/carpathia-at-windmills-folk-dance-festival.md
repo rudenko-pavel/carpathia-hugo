@@ -1,6 +1,6 @@
 +++
 date = "2018-05-15T13:35:05+00:00"
-title = "Carpathia at Windmills Folk Dance Festival"
+title = "Carpathia at Windmills Folk Dance Festival.."
 [[images]]
 alt_image = "image 111"
 img_src = "33635322-5fcc-4d4b-8975-65e497c68ea2"
