@@ -15,15 +15,15 @@
 			<div class="columns small-12 medium-8 large-8 medium-offset-2 large-offset-2">
 				<div class="card-section">
 					<!-- Ranges through content/performances/_index.md -->
-					{{ $item := .Data.Pages }}
+					{{ $item := .Params.Performances }}
 					{{ range $item }}
-						<p><strong>{{.Title}} </strong>-  {{  dateFormat "Jan 2, 2006" .Date }}</p>
-						<div class="short-description">
-							{{substr .Content 0 100 | safeHTML}}
-							<p>&nbsp;</p>
-							<p class="read-more"><a href="{{.Permalink}}">{{ $.Params.read_more }}</a></p>
-							<div class="clear"></div>
-						</div>
+						{{ $img := .images }}
+						{{ range first 1 $img }}
+							<a href="{{.Permalink}}">
+								<img class="grid-image" src="https://ucarecdn.com/{{ .img_src }}/-/preview/" alt="{{ .alt_image }}" title= "{{ .alt_image }}">
+							</a>
+						{{ end }}
+						<hr/>
 					{{ end }}
 				</div>
 			</div>
