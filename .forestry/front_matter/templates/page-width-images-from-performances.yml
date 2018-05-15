@@ -13,6 +13,8 @@ fields:
   label: events date
   name: date
   description: events date
+  config:
+    date_format: MM/DD/YYYY
 - type: list
   label: Images
   name: images
