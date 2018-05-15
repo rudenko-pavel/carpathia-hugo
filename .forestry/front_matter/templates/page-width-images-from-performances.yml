@@ -1,6 +1,6 @@
 ---
 pages:
-- performances/ss.md
+- performances/carpathia-performs-at-the-cherry-blossom-festival-22.md
 - performances/carpathia-at-windmills-folk-dance-festival.md
 hide_body: false
 is_partial: false
@@ -8,8 +8,9 @@ fields:
 - type: text
   label: title
   name: title
-  description: title of performane
+  description: title of performance
 - type: datetime
   label: events date
   name: date
   description: events date
+- type: list
