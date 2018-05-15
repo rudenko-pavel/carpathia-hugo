@@ -1,11 +1,17 @@
 <article class="card type-text">
 	<div class="header">
-		<h1><a href="{{ .Permalink }}">{{ .Params.Title }}</a></h1>
+		<h1>{{ .Params.Title }}</h1>
 	</div>
 	<div class="card-section">
-		wqe
+		<div class="row">
+			<!-- Ranges through content/performances/*.md -->
+			{{ range $key, $val := .Params.images }}
+				<div class="columns small-12 medium-6 large-4">
+					<img class="" src="https://ucarecdn.com/{{ $val}}/-/preview/">
+				</div>
+			{{ end }}
+		</div>
 	</div>
-	<hr/>
 	<h6>{{  dateFormat "Jan 2, 2006" .Date }}</h6>
 
 </article>
