@@ -8,7 +8,7 @@ is_partial: false
 fields:
 - type: text
   label: title
-  name: alt
+  name: title
   description: title of performance
 - type: datetime
   label: events date
