@@ -14,16 +14,20 @@
 		<div class="row">
 			<div class="columns small-12 medium-8 large-8 medium-offset-2 large-offset-2">
 				<div class="card-section">
-					<!-- Ranges through content/performances/*.md -->
-					{{ $item := .Data.Pages }}
-					{{ range $item }} 
-						{{$img := index (.Params.images) 0 }}
-						<a href="{{.Permalink}}">
-							<img class="orbit-image" src="https://ucarecdn.com/{{ $img }}/-/preview/">
-						</a>
-
-
-					{{ end }}
+					<div class="row">
+						<!-- Ranges through content/performances/*.md -->
+						{{ $item := .Data.Pages }}
+						{{ range $item }} 
+							{{$img := index (.Params.images) 0 }}
+							<div class="columns small-12 medium-6 large-4">
+								<a href="{{.Permalink}}">
+									<img 	class="orbit-image" src="https://ucarecdn.com/{{ $img }}/-/preview/" 
+											alt=	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}" 
+											title= 	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}">
+								</a>
+							</div>
+						{{ end }}
+					</div>
 				</div>
 			</div>
 		</div>
