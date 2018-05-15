@@ -14,3 +14,6 @@ fields:
   name: date
   description: events date
 - type: list
+  label: Images
+  name: images
+  description: list of Images
