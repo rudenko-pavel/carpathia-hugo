@@ -22,3 +22,9 @@ fields:
       type: pages
       section: performances
       file: suites-macedonia-json
+- type: text
+  name: suite
+  label: suite
+  description: item from section 'performance' (value='performance')
+  default: performance
+  hidden: true
