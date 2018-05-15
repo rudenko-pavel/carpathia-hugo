@@ -6,31 +6,31 @@ joinus: "We are always recruiting new and enthusiastic dancers. Carpathia is com
 If you fit that bill, contact us and we would love to have you! No dance experience necessary! We'll teach you all of the steps."
 
 item_from_orbit:
-  - img_src: https://ucarecdn.com/16f48a28-b6e1-4f5c-a652-6b669b8702ec/-/preview/
+  - img_src: 16f48a28-b6e1-4f5c-a652-6b669b8702ec
     is_active: true
     title_img: 
-  - img_src: https://ucarecdn.com/cf4d5cd6-7e8d-47ef-be7a-cb997f36a0c0/-/preview/
+  - img_src: cf4d5cd6-7e8d-47ef-be7a-cb997f36a0c0
     is_active: false
     title_img: 
-  - img_src: https://ucarecdn.com/f0d6eaa4-debb-4c5e-9e38-5bf2c14cca3d/-/preview/
+  - img_src: f0d6eaa4-debb-4c5e-9e38-5bf2c14cca3d
     is_active: false
     title_img: 
-  - img_src: https://ucarecdn.com/89023569-0629-4cc4-9747-437933f4adf6/-/preview/
+  - img_src: 89023569-0629-4cc4-9747-437933f4adf6
     is_active: false
     title_img: 
-  - img_src: https://ucarecdn.com/90c7776e-d7a0-43c1-adcd-a4a62994170f/-/preview/
+  - img_src: 90c7776e-d7a0-43c1-adcd-a4a62994170f
     is_active: german
     title_img: 
-  - img_src: https://ucarecdn.com/94f8c5a2-a5db-466f-a2f8-d38451f41045/-/preview/
+  - img_src: 94f8c5a2-a5db-466f-a2f8-d38451f41045
     is_active: false
     title_img: 
-  - img_src: https://ucarecdn.com/2988346c-6724-4597-ad17-952f5a32e75e/-/preview/
+  - img_src: 2988346c-6724-4597-ad17-952f5a32e75e
     is_active: false
     title_img: 
-  - img_src: https://ucarecdn.com/2e36cd1b-7edf-4feb-ae94-9d984ed0e54a/-/preview/
+  - img_src: 2e36cd1b-7edf-4feb-ae94-9d984ed0e54a
     is_active: false
     title_img: 
-  - img_src: https://ucarecdn.com/2adc9117-98db-4a6b-adbf-938860d77bf7/-/preview/
+  - img_src: 2adc9117-98db-4a6b-adbf-938860d77bf7
     is_active: false
     title_img: 
 ---
