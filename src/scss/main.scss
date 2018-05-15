@@ -9,3 +9,55 @@
 	clear: both;
 	float: none !important;
 }
+
+/* ----------- list - start   -------------*/
+.short-description, .card-section{
+	border-bottom: 1px dashed $light-gray;
+	padding-bottom: 1em;
+  }
+
+.short-description>p{
+	float:left;
+}
+
+.short-description>p:first-child{
+	font-style: italic;
+}
+
+.short-description>p:first-child::before {
+	content: '\201c';
+	top: -12px; 
+	left: 0; 
+  }
+  
+  .short-description>p:first-child::after {
+	content: ' ... \201d';
+	bottom: -29px; 
+	right: 0;
+  }
+  
+.read-more{
+	padding-left: 20px;
+}
+
+.read-more a{
+	background-color: $primary-color;
+  	color: $white;
+  	padding: 0.5em 1em;
+  	text-decoration: none;
+  	text-transform: uppercase;
+}
+
+.read-more a:hover {
+  background-color: lighten($primary-color,5%);
+}
+
+
+/* ----------- list - end   -------------*/
+
+/* ----------- links - start   -------------*/
+.one-link:not(:first-child){
+	border-top: 1px dashed $light-gray;
+	padding-top: 1em;
+}
+/* ----------- links - end   -------------*/

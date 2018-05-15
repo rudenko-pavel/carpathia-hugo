@@ -6,7 +6,7 @@
   <main>
 		<article class="card">
 			<div class="header">
-				<h1>{{.Title}} | Performances</h1>
+				<h1>{{.Title}} | Press</h1>
 			</div>
 			<!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
 			<div>{{.Content}}</div>
@@ -14,7 +14,7 @@
 		<div class="row">
 			<div class="columns small-12 medium-8 large-8 medium-offset-2 large-offset-2">
 				<div class="card-section">
-					<!-- Ranges through content/performances/*.md -->
+					<!-- Ranges through content/press/*.md -->
 					{{ $item := .Data.Pages }}
 					{{ range $item }}
 						<p><strong>{{.Title}} </strong>-  {{  dateFormat "Jan 2, 2006" .Date }}</p>

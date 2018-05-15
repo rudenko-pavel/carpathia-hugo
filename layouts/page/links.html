@@ -9,8 +9,7 @@
     </div>
     <div class="card-section">
       {{ range $group, $links := .Site.Data.links }}
-        <h2>{{ $group }}</h2>
-
+        <h2 class="one-link">{{ $group }}</h2>
         {{ range $links }}
           <p><strong>{{ .name }}</strong> - <a href="{{ .url }}" target="_blank">{{ .url }}</a></p>
           <p>{{ .description }}</p>
