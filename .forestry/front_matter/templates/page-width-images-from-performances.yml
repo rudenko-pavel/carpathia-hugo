@@ -1,6 +1,4 @@
 ---
-pages:
-- performances/s.md
 hide_body: false
 is_partial: false
 fields:
@@ -23,3 +21,4 @@ fields:
     source:
       type: pages
       section: performances
+      file: suites-macedonia-json
