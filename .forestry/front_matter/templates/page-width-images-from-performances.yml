@@ -1,7 +1,4 @@
 ---
-pages:
-- performances/s.md
-- performances/carpathia-performs-at-the-cherry-blossom-festival.md
 hide_body: false
 is_partial: false
 fields:
@@ -19,3 +16,7 @@ fields:
   label: Images
   name: images
   description: list of Images
+  config:
+    use_select: false
+    source:
+      type: datafiles
