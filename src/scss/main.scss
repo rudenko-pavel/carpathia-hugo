@@ -139,3 +139,29 @@
 }
 
 /* ----------- reveal - end   -------------*/
+
+
+@media only screen and (max-width: 639px) {
+    header#main-header {
+		height: 3rem !important;
+		position: fixed !important;
+		width: 100%;
+	}
+
+	header#main-header .main-header-inner {
+		height: 3rem !important;
+	}
+
+	header#main-header .main-header-inner .header-menu li a, header#main-header .main-header-inner .header-menu li span {
+		font-size: 1.25rem !important;
+		padding: 1rem !important;
+	}
+
+	header#main-header .main-header-inner .header-menu li a{
+		padding: 0.3em !important;
+	}
+
+	#main-banner .banner-content{
+		margin-top: 3rem;
+	}
+}
