@@ -5,3 +5,4 @@ suite = "performance"
 title = "Carpathia Performs at the World Dance Showcase"
 
 +++
+Carpathia will participate in this annual showcase of cultures at the Prince George's Publick Playhouse. Please check out the event site for info on tickets! [https://www.facebook.com/events/327191154454876/](https://www.facebook.com/events/327191154454876/ "https://www.facebook.com/events/327191154454876/")  
