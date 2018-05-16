@@ -5,3 +5,6 @@ suite = "performance"
 title = "Carpathia at Windmills Folk Dance Festival"
 
 +++
+Carpathia will perform two shows at 12:30 and 1:30 PM at the exciting annual Windmills Festival at Baltimore Lithuanian Hall. 
+
+Our first show will include dances from Macedonia and of the Roma, while our second show will feature dances of Romania and Ukraine. Stick around for performances by other groups, open dancing, food and fellowship!  
