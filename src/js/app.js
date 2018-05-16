@@ -29,7 +29,7 @@ $(document).ready(function() {
           },
           onLeave: function(index, nextIndex, direction){
             console.log("Next slide index = ", nextIndex);
-
+            console.log("isMobile = ", isMobile);
             if( nextIndex > 1 ) {
               let winH = $(window).height(),
                 offset = winH * ( nextIndex - 2 ),
@@ -58,7 +58,11 @@ $(document).ready(function() {
             $('[href="#' + anchorLink + '/' + nextSlideIndex + '"]').parent().addClass('active');
           }
       };
-    $('#fullpage').fullpage(fpSettings);
+
+      if (isMobile==false){
+        $('#fullpage').fullpage(fpSettings);
+      }
+    
 
     $(window).bind("scroll", function(){
       var offset = $(window).scrollTop(),
