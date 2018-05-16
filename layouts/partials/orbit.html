@@ -5,7 +5,7 @@
         {{ $item := .Params.item_from_orbit }}
         {{ range $item }}
             <li class=" {{ if eq .is_active "true" }}is-active{{ end }} orbit-slide">
-                <img class="orbit-image" src="https://ucarecdn.com/{{ .img_src }}/-/preview/" alt="{{ .title_img }}" title= "{{ .title_img }}">
+                <img class="orbit-image" src="https://ucarecdn.com/{{ .img_src }}/-/preview/" >
             </li>
         {{end}}
     </ul>             

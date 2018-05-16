@@ -118,3 +118,24 @@
     cursor: pointer;
 }
 /* ----------- tooltip - end   -------------*/
+
+/* ----------- reveal - end   -------------*/
+.full.reveal{
+	padding: 0px !important;
+	background-color: $light-gray;
+}
+
+.full.reveal .orbit{
+	padding: 30px !important;
+}
+
+.full.reveal .orbit-container,
+.full.reveal .orbit-container .orbit-slide{
+	height: 100% !important;
+}
+
+.grid-item-image:hover{
+	cursor: pointer;
+}
+
+/* ----------- reveal - end   -------------*/
