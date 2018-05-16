@@ -16,12 +16,16 @@
 				<div class="card-section">
 					<div class="row">
 						<!-- Ranges through content/performances/*.md -->
-						{{ $item := .Data.Pages }}
-						{{ range $item }} 
-							{{$img := index (.Params.images) 0 }}
-							<div class="columns small-12 medium-6 large-4">
+						{{ range $index, $item:= .Data.Pages }} 
+							{{if (eq $index 0)}}
+								<div class="columns grid-image small-12 medium-12 large-12">
+							{{else}}
+								<div class="columns grid-image small-12 medium-6 large-4">
+							{{end}}
+								{{$img := index (.Params.images) 0 }}
 								<a href="{{.Permalink}}">
-									<img 	class="" src="https://ucarecdn.com/{{ $img }}/-/preview/" 
+									<img 	class="top" src="https://ucarecdn.com/{{ $img }}/-/preview/" 
+											data-tooltip tabindex="1" title="{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}" 
 											alt=	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}" 
 											title= 	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}">
 								</a>

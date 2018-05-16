@@ -57,7 +57,7 @@ PATHS:
     # - "bower_components/foundation-sites/js/foundation.sticky.js"
     # - "bower_components/foundation-sites/js/foundation.tabs.js"
     # - "bower_components/foundation-sites/js/foundation.toggler.js"
-    # - "bower_components/foundation-sites/js/foundation.tooltip.js"
+    - "bower_components/foundation-sites/js/foundation.tooltip.js"
     # FullPage files
     - "bower_components/fullpage.js/vendors/scrolloverflow.js"
     - "bower_components/fullpage.js/vendors/jquery.easings.min.js"
