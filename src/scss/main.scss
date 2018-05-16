@@ -164,4 +164,26 @@
 	#main-banner .banner-content{
 		margin-top: 3rem !important;
 	}
+
+	header#main-header .main-header-inner .logo-container .logo-abridged {
+		-webkit-transform: translateY(-0.5rem) !important;
+		-ms-transform: translateY(-0.5rem) !important;
+		transform: translateY(-0.5rem) !important;
+		height: 90% !important;
+	}
+
+	section {
+		height: auto !important;
+		min-height: 100vh;
+	}
+
+	.orbit-previous, .orbit-next {
+		background-color: $primary-color !important;
+		opacity: 0.7;
+    	padding: 0.5rem !important;
+	}
+
+	#main-banner .banner-content {
+		display: block !important;
+	}
 }
