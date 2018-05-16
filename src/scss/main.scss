@@ -146,9 +146,10 @@
 		height: 3rem !important;
 		position: fixed !important;
 		width: 100%;
+		top: 0px;
 	}
 
-	header#main-header .main-header-inner {
+	header#main-header, .main-header-inner {
 		height: 3rem !important;
 	}
 
@@ -161,7 +162,8 @@
 		padding: 0.3em !important;
 	}
 
-	#main-banner .banner-content{
+	#main-banner .banner-content,
+	.breadcrumbs.type-text{
 		margin-top: 3rem !important;
 	}
 
