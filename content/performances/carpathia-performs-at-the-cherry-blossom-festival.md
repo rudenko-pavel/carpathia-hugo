@@ -5,3 +5,4 @@ suite = "performance"
 title = "Carpathia Performs at the Cherry Blossom Festival"
 
 +++
+Carpathia will perform at the ANA Stage at the Tidal Basin Welcome Area, presenting dances from various countries in Eastern & Central Europe. The stage is located near the Tidal Basin's northeast side (the area towards the Washington Monument and Holocaust Museum. The event is free!  
