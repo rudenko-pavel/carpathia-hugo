@@ -1,4 +1,4 @@
 ---
-title: Our Performances
+title: Performances
 suite: performance
 ---

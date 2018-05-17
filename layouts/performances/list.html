@@ -6,7 +6,7 @@
   <main>
 		<article class="card">
 			<div class="header">
-				<h1>{{.Title}} | Performances</h1>
+				<h1>{{.Title}}</h1>
 			</div>
 			<!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
 			<div>{{.Content}}</div>
@@ -23,6 +23,8 @@
 								<div class="columns grid-image small-12 medium-6 large-4">
 							{{end}}
 								{{$img := index (.Params.images) 0 }}
+								<h5 class="for-mobile">{{.Params.title}}</h5>
+								<h6 class="for-mobile"> {{dateFormat "Jan 2, 2006" .Params.date}}</h6>
 								<a href="{{.Permalink}}">
 									<img 	class="top" src="https://ucarecdn.com/{{ $img }}/-/preview/" 
 											data-tooltip tabindex="1" title="{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}" 

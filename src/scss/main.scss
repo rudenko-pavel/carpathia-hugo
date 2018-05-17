@@ -98,6 +98,10 @@
 .grid-image{
 	padding:14px;
 }
+
+.for-mobile{
+	display: none;
+}
 /* ----------- list - end   -------------*/
 
 /* ----------- links - start   -------------*/
@@ -188,4 +192,38 @@
 	#main-banner .banner-content {
 		display: block !important;
 	}
+
+	.for-mobile{
+		display: block;
+		padding: 5px 0;
+    	margin: 5px 0;
+	}
+
+	h1 {
+		font-size: 1.2em;
+	}
+
+	article.card > header h1:before, article.card > header h1:after, 
+	article.card > header h2:before, article.card > header h2:after, 
+	article.card > .header h1:before, article.card > .header h1:after, 
+	article.card > .header h2:before, article.card > .header h2:after {
+		background-size: 60% 100% !important;
+		margin-right: 0.5rem !important;
+		width: calc(1em + 2rem) !important;
+		margin-left: 0rem !important;
+	}
+
+	.card {
+		margin-bottom: 0.2rem !important;
+	}
+
+	article.card > header, article.card > .header {
+		padding-left: 0.3rem !important;
+		padding-right: 0.3rem !important;
+	}
+
+	.grid-image {
+		border-bottom: 1px dotted $medium-gray;
+	}
+
 }
