@@ -214,6 +214,11 @@
 
 
 @media only screen and (max-width: 639px) {
+	.header-menu.right.show-for-small-only{
+		position: absolute;
+		right: 0px;
+	}
+
     header#main-header {
 		height: 3rem !important;
 		position: fixed !important;
