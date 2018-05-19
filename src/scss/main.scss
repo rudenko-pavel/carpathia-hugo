@@ -54,14 +54,10 @@
 /* ----------- orbit - end   -------------*/
 
 /* ----------- list - start   -------------*/
-.short-description, .card-section{
+ .card-section .read-more{
 	border-bottom: 1px dashed $light-gray;
 	padding-bottom: 1em;
   }
-
-.short-description>p{
-	float:left;
-}
 
 .short-description>p:first-child{
 	font-style: italic;
@@ -97,10 +93,32 @@
 
 .grid-image{
 	padding:14px;
+	position: relative;
+	border: 1px dashed $light-gray;
+	margin: 5px;
 }
 
 .for-mobile{
 	display: none;
+}
+
+.perfomance_img{
+	padding-bottom: 4em;
+}
+
+.img-prev .perfomance_description{
+	font-size: $global-font-size !important;
+}
+
+.perfomance_description{
+	display: none;
+	font-size: $global-font-size*0.8;
+}
+
+.performanceOverview{
+	position: absolute;
+	bottom: 0px;
+	background-color: $white;
 }
 /* ----------- list - end   -------------*/
 
@@ -109,6 +127,26 @@
 	border-top: 1px dashed $light-gray;
 	padding-top: 1em;
 }
+
+.image-date{
+	background-color: lighten($primary-color,10%);
+	color:$white;
+	position: absolute;
+	top: 2em;
+	right: 2em;
+	width: 3em;
+	height: 3em;
+	line-height: 3em;
+	border-radius: 1.5em;
+	text-align: center;
+	font-weight: 700;
+	font-size: $global-font-size*0.7;
+}
+
+.img-prev .image-date{
+	font-size: $global-font-size*1.1 !important;
+}
+
 /* ----------- links - end   -------------*/
 
 /* ----------- tooltip - start   -------------*/

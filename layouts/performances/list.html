@@ -18,19 +18,24 @@
 						<!-- Ranges through content/performances/*.md -->
 						{{ range $index, $item:= .Data.Pages }} 
 							{{if (eq $index 0)}}
-								<div class="columns grid-image small-12 medium-12 large-12">
+								<div class="columns  grid-image img-prev small-12 medium-12 large-12 wrapper_img" data-id="{{$index}}">
 							{{else}}
-								<div class="columns grid-image small-12 medium-6 large-4">
+								<div class="columns grid-image small-12 medium-6 large-4 wrapper_img" data-id="{{$index}}" >
 							{{end}}
 								{{$img := index (.Params.images) 0 }}
-								<h5 class="for-mobile">{{.Params.title}}</h5>
-								<h6 class="for-mobile"> {{dateFormat "Jan 2, 2006" .Params.date}}</h6>
-								<a href="{{.Permalink}}">
-									<img 	class="top" src="https://ucarecdn.com/{{ $img }}/-/preview/" 
-											data-tooltip tabindex="1" title="{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}" 
-											alt=	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}" 
-											title= 	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}">
-								</a>
+								<div data-id="{{$index}}"  class="perfomance_img">
+									<a href="{{.Permalink}}">
+										<img 	src="https://ucarecdn.com/{{ $img }}/-/preview/"  
+										
+												alt=	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}" 
+												title= 	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}">
+									</a>
+								</div>
+								<div class="performanceOverview">
+									<h4>{{.Params.title}}</h4>
+									<div id="perf_description_{{$index}}" class="perfomance_description">{{.Content}}</div>
+								</div>
+								<div class="image-date"> {{dateFormat "2 Jan" .Params.date}}</div>
 							</div>
 						{{ end }}
 					</div>
