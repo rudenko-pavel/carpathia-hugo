@@ -112,6 +112,7 @@
 .perfomance_description{
 	display: none;
 	font-size: $global-font-size*0.8;
+	margin-right: 14px;
 }
 
 .performanceOverview{
@@ -144,6 +145,32 @@
 
 .img-prev .image-date{
 	font-size: $global-font-size*1.1 !important;
+}
+
+.photos{
+	position: absolute;
+	top: -3em;
+	background-color: lighten($primary-color,10%);
+	color:$white;
+	width: 8em;
+	height: 3em;
+	line-height: 3em;
+	border-radius: 0em;
+	text-align: center;
+	font-weight: 700;
+	font-size: $global-font-size*0.7;
+	text-transform: uppercase; 
+}
+
+.img-prev .photos{
+	font-size: $global-font-size*0.9 !important;
+	width: 10em !important;
+	top: -3.8em !important;
+}
+
+.photos a {
+	text-decoration: none;
+	color: $white;
 }
 
 /* ----------- links - end   -------------*/
