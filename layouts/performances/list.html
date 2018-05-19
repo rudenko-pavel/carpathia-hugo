@@ -4,43 +4,36 @@
   {{ block "header" . }}{{ partial "header" . }}{{end}}
 
   <main>
-		<article class="card">
-			<div class="header">
-				<h1>{{.Title}}</h1>
-			</div>
-			<!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-			<div>{{.Content}}</div>
-		</article>
-		<div class="row">
-			<div class="columns small-12 medium-8 large-8 medium-offset-2 large-offset-2">
-				<div class="card-section">
-					<div class="row">
-						<!-- Ranges through content/performances/*.md -->
-						{{ range $index, $item:= .Data.Pages }} 
-							{{if (eq $index 0)}}
-								<div class="columns  grid-image img-prev small-12 medium-12 large-12 wrapper_img" data-id="{{$index}}">
-							{{else}}
-								<div class="columns grid-image small-12 medium-6 large-4 wrapper_img" data-id="{{$index}}" >
-							{{end}}
-								{{$img := index (.Params.images) 0 }}
-								<div data-id="{{$index}}"  class="perfomance_img">
-									<img 	src="https://ucarecdn.com/{{ $img }}/-/preview/"  
-											alt=	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}" 
-											title= 	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}">			
-								</div>
-								<div class="performanceOverview">
-										<a href="{{.Permalink}}"><div class="photos">photos</div></a>
-									<h4>{{.Params.title}}</h4>
-									<div id="perf_description_{{$index}}" class="perfomance_description">{{.Content}}</div>
-								</div>
-								
-								<div class="image-date"> {{dateFormat "2 Jan" .Params.date}}</div>
+	<div class="row">
+		<div class="columns small-12 medium-10 large-10 medium-offset-1 large-offset-1">
+			<div class="card-section">
+				<div class="row">
+					<!-- Ranges through content/performances/*.md -->
+					{{ range $index, $item:= .Data.Pages }} 
+						{{if (eq $index 0)}}
+							<div class="columns  grid-image img-prev small-12 medium-12 large-12 wrapper_img" data-id="{{$index}}">
+						{{else}}
+							<div class="columns grid-image small-12 medium-6 large-4 wrapper_img" data-id="{{$index}}" >
+						{{end}}
+							{{$img := index (.Params.images) 0 }}
+							<div data-id="{{$index}}"  class="perfomance_img">
+								<img 	src="https://ucarecdn.com/{{ $img }}/-/preview/"  
+										alt=	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}" 
+										title= 	"{{.Params.title}} :  {{dateFormat "Jan 2, 2006" .Params.date}}">			
 							</div>
-						{{ end }}
-					</div>
+							<div class="performanceOverview">
+									<a href="{{.Permalink}}"><div class="photos">photos</div></a>
+								<h4>{{.Params.title}}</h4>
+								<div id="perf_description_{{$index}}" class="perfomance_description">{{.Content}}</div>
+							</div>
+							
+							<div class="image-date"> {{dateFormat "2 Jan" .Params.date}}</div>
+						</div>
+					{{ end }}
 				</div>
 			</div>
 		</div>
+	</div>
   </main>
 
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
