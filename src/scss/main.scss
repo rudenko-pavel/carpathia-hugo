@@ -217,6 +217,26 @@
 
 
 @media only screen and (max-width: 639px) {
+	
+	.vertical.menu{
+		padding-top: 0rem !important;
+		padding-left: 1rem !important;
+	}
+
+	.vertical.menu.flags > li{
+		background-size: 50px;
+		background-repeat: no-repeat;
+		background-position: right 12px center;
+	}
+	.flags .ukr{ background-image: url(../img/flags/Flag_of_Ukraine.svg); }
+	.flags .rou{ background-image: url(../img/flags/Flag_of_Romania.svg); }
+	.flags .pol{ background-image: url(../img/flags/Flag_of_Poland.svg); }
+	.flags .gyp{ background-image: url(../img/flags/Flag_of_the_Romani_people.svg); }
+	.flags .ger{ background-image: url(../img/flags/Flag_of_Germany.svg); }
+	.flags .hun{ background-image: url(../img/flags/Flag_of_Hungary.svg); }
+	.flags .mkd{ background-image: url(../img/flags/Flag_of_Macedonia.svg); }
+
+
 	.header-menu.right.show-for-small-only{
 		position: absolute;
 		right: 0px;
