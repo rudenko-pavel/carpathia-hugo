@@ -86,7 +86,7 @@ $(document).ready(function() {
   })
 
 
-  $( ".perfomance_img" ).mouseover(function() {
+  $( ".wrapper_img" ).mouseover(function() {
     var id="#perf_description_" + $(this).attr('data-id');
     $(id).css("display", "block");
   });
