@@ -3,10 +3,10 @@
 $(document).ready(function() {
 
   var CarpathiaEvents = undefined;
-
+  var isMobile = $(window).width() < 640;
   if($("#fullpage").length ) {
     var header = $('#fullpage #main-header'),
-      isMobile = $(window).width() < 640,
+      
       headerHeight = header.height(),
       fpSettings = {
           //Navigation
@@ -85,14 +85,16 @@ $(document).ready(function() {
     $(this).foundation('toggle');
   })
 
-
-  $( ".wrapper_img" ).mouseover(function() {
-    var id="#perf_description_" + $(this).attr('data-id');
-    $(id).css("display", "block");
-  });
-  $( ".wrapper_img" ).mouseout(function() {
-    var id="#perf_description_" + $(this).attr('data-id');
-    $(id).css("display", "none");
-  });
+  if (isMobile==false){
+    $( ".wrapper_img" ).mouseover(function() {
+      var id="#perf_description_" + $(this).attr('data-id');
+      $(id).css("display", "block");
+      console.log("isMobile: ",isMobile);
+    });
+    $( ".wrapper_img" ).mouseout(function() {
+      var id="#perf_description_" + $(this).attr('data-id');
+      $(id).css("display", "none");
+    });
+  }
 
 })

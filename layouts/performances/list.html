@@ -11,7 +11,7 @@
 					<!-- Ranges through content/performances/*.md -->
 					{{ range $index, $item:= .Data.Pages }} 
 						{{if (eq $index 0)}}
-							<div class="columns  grid-image img-prev small-12 medium-12 large-12 wrapper_img" data-id="{{$index}}">
+							<div class="columns grid-image img-prev small-12 medium-12 large-12 wrapper_img" data-id="{{$index}}">
 						{{else}}
 							<div class="columns grid-image small-12 medium-6 large-4 wrapper_img" data-id="{{$index}}" >
 						{{end}}

@@ -108,6 +108,10 @@
 	padding-bottom: 4em;
 }
 
+.img-prev{
+	margin-top: 3em;
+}
+
 .img-prev .perfomance_description{
 	font-size: $global-font-size !important;
 }
@@ -122,6 +126,12 @@
 	position: absolute;
 	bottom: 0px;
 	background-color: $white;
+}
+
+.performanceOverview h4{
+	padding: 0px 10px;
+    margin: 0px;
+    height: 4em;
 }
 /* ----------- list - end   -------------*/
 
@@ -152,11 +162,9 @@
 
 .photos{
 	position: absolute;
-	top: -3em;
 	background-color: lighten($primary-color,10%);
 	color:$white;
 	width: 8em;
-	height: 3em;
 	line-height: 3em;
 	border-radius: 0em;
 	text-align: center;
@@ -166,10 +174,15 @@
 }
 
 .img-prev .photos{
-	font-size: $global-font-size*0.9 !important;
-	width: 10em !important;
-	top: -3.8em !important;
+
 }
+
+[class*="small-"]  .photos {
+	height: 3em;
+    top: -4em;
+    left: 0em;
+}
+
 
 .photos a {
 	text-decoration: none;
