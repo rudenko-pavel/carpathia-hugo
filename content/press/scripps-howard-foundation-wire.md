@@ -7,6 +7,7 @@ url: ''
 date_published: 2018-05-09 21:00:00 +0000
 layout: singlepress
 suite: press
+source_name: Washington Post
 
 ---
 **Quick music plays** in the background, competing with the persistent thrum of fans. Water marks on the ceiling give away the building's age, and green and red decorative stars hang from the ceiling. A church basement may not an ideal dance studio, but it has a spacious dance floor. 
