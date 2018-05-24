@@ -7,6 +7,7 @@ date_originally_published: 2018-03-14 22:00:00 +0000
 date_published: 2018-05-06 11:00:00 +0000
 suite: press
 layout: singlepress
+source_name: Washington Post -wiki
 
 ---
 **Melodic metalcore** is a fusion genre, incorporating elements of metalcore and melodic death metal, with a heavy emphasis on melodic instrumentation, blast beats, metalcore-stylized breakdowns and clean singing. 
