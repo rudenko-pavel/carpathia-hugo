@@ -17,12 +17,12 @@
 					<!-- Ranges through content/press/*.md -->
 					{{ $item := .Data.Pages }}
 					{{ range $item }}
-						<h2>{{.Title}}</h2>
-						<p>{{  dateFormat "Jan 2, 2006" .Date }}</p>
+						<h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
+						<h5>{{  dateFormat "Jan 2, 2006" .Date }} in '{{ .Params.source_name }}'</h5>
 						<div class="short-description">
 							{{substr .Content 0 100 | safeHTML}}
 						</div>
-						<p class="read-more"><a href="{{.Permalink}}">{{ $.Params.read_more }}</a></p>
+						<p class="read-more"><!--a href="{{.Permalink}}">{{ $.Params.read_more }}</a--></p>
 					{{ end }}
 				</div>
 			</div>

@@ -249,22 +249,22 @@
 	.flags .hun{ background-image: url(../img/flags/Flag_of_Hungary.svg); }
 	.flags .mkd{ background-image: url(../img/flags/Flag_of_Macedonia.svg); }
 
-	.for-small-only{
+	.show-for-small-only{
 		padding: 0px;
 		text-align: center;
 	}
 
 
-	.for-small-only li{
+	.show-for-small-only li{
 		display: inline-block;
     	padding: 0 10px;
 	}
 
-	.for-small-only li a{
+	.show-for-small-only li a{
 		color: $white;
 	}
 
-	.for-small-only .fa{
+	.show-for-small-only .fa{
 		font-size: $global-font-size*1.3 !important;
 	}
 
