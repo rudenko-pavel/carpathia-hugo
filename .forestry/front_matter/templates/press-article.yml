@@ -36,7 +36,7 @@ fields:
   default: singlepress
   hidden: true
 pages:
+- press/dances-with-wolves.md
 - press/scripps-howard-foundation-wire.md
 - press/melodic-metalcore.md
 - press/dance.md
-- press/dances-with-wolves.md
