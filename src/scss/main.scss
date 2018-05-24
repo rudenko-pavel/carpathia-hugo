@@ -112,18 +112,9 @@
 	margin-top: 3em;
 }
 
-.img-prev .perfomance_description{
-	font-size: $global-font-size !important;
-}
-
-.perfomance_description{
-	display: none;
-	font-size: $global-font-size*0.8;
-	margin-right: 14px;
-}
 
 .performanceOverview{
-	position: absolute;
+	position: relative;
 	bottom: 0px;
 	background-color: $white;
 }
@@ -164,8 +155,6 @@
 	position: absolute;
 	background-color: lighten($primary-color,10%);
 	color:$white;
-	width: 8em;
-	line-height: 3em;
 	border-radius: 0em;
 	text-align: center;
 	font-weight: 700;
@@ -178,8 +167,8 @@
 }
 
 [class*="small-"]  .photos {
-	height: 3em;
-    top: -4em;
+	padding: 10px;
+    top: -4.5em;
     left: 0em;
 }
 
