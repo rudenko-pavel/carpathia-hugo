@@ -1,4 +1,8 @@
 ---
+pages:
+- performances/carpathia-at-windmills-folk-dance-festival.md
+- performances/carpathia-performs-at-the-cherry-blossom-festival.md
+- performances/carpathia-performs-at-the-world-dance-showcase.md
 hide_body: false
 is_partial: false
 fields:
@@ -28,7 +32,3 @@ fields:
   description: item from section 'performance' (value='performance')
   default: performance
   hidden: true
-pages:
-- performances/carpathia-at-windmills-folk-dance-festival.md
-- performances/carpathia-performs-at-the-cherry-blossom-festival.md
-- performances/carpathia-performs-at-the-world-dance-showcase.md

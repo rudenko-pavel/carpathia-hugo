@@ -1,4 +1,10 @@
 ---
+pages:
+- ukraine/privit.md
+- ukraine/arkan.md
+- ukraine/arkan.md
+- ukraine/privit.md
+- gypsy/loli-phabay-and-tzigansko-horo.md
 hide_body: false
 is_partial: false
 fields:
@@ -32,6 +38,3 @@ fields:
   type: text
   hidden: false
   default: ''
-pages:
-- ukraine/privit.md
-- ukraine/arkan.md

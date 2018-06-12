@@ -9,9 +9,6 @@ fields:
   config:
     required: true
 - type: text
-  label: source name
-  name: source_name
-- type: text
   name: url
   label: URL
   description: The URL of the original article.
@@ -36,7 +33,8 @@ fields:
   default: singlepress
   hidden: true
 pages:
-- press/dances-with-wolves.md
+- press/new-yok-times.md
 - press/scripps-howard-foundation-wire.md
 - press/melodic-metalcore.md
 - press/dance.md
+- press/dances-with-wolves.md
